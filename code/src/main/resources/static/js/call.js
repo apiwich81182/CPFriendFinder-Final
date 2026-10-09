@@ -24,7 +24,48 @@
   let displayStream = null, savedCameraTrack = null, sharingTask = null;
   let iceLoaded = false;
   const peers = new Map();
-  const ICE_CONFIG = { iceServers: [{ urls: "stun:stun.relay.metered.ca:80" }] };
+  const ICE_CONFIG = {
+    iceServers: [
+      { urls: "stun:stun.l.google.com:19302" },
+      { urls: "stun:stun1.l.google.com:19302" },
+      { urls: "stun:stun.relay.metered.ca:80" },
+      {
+        urls: "turn:asia-east.relay.metered.ca:80",
+        username: "9163b771c40b903fe9b0a80d",
+        credential: "Avx5pFF0JyQ3Fm1i",
+      },
+      {
+        urls: "turn:asia-east.relay.metered.ca:80?transport=tcp",
+        username: "9163b771c40b903fe9b0a80d",
+        credential: "Avx5pFF0JyQ3Fm1i",
+      },
+      {
+        urls: "turn:asia-east.relay.metered.ca:443",
+        username: "9163b771c40b903fe9b0a80d",
+        credential: "Avx5pFF0JyQ3Fm1i",
+      },
+      {
+        urls: "turns:asia-east.relay.metered.ca:443?transport=tcp",
+        username: "9163b771c40b903fe9b0a80d",
+        credential: "Avx5pFF0JyQ3Fm1i",
+      },
+      {
+        urls: "turn:openrelay.metered.ca:80",
+        username: "openrelayproject",
+        credential: "openrelayproject",
+      },
+      {
+        urls: "turn:openrelay.metered.ca:443",
+        username: "openrelayproject",
+        credential: "openrelayproject",
+      },
+      {
+        urls: "turn:openrelay.metered.ca:443?transport=tcp",
+        username: "openrelayproject",
+        credential: "openrelayproject",
+      },
+    ],
+  };
 
   async function loadMe() {
     if (me?.id) return me;
@@ -73,11 +114,16 @@
   }
   function wsPublish(destination, body) {
     if (!stompClient?.connected) return false;
-    stompClient.publish({ destination, body: JSON.stringify(body) });
-    return true;
+    try {
+      stompClient.publish({ destination, body: JSON.stringify(body) });
+      return true;
+    } catch (err) {
+      console.warn("wsPublish failed:", err);
+      return false;
+    }
   }
   function publish(destination, body) {
-    if (!wsPublish(destination, body)) throw new Error("การเชื่อมต่อระบบโทรขาดหาย กรุณาลองใหม่");
+    if (!wsPublish(destination, body)) console.warn("การเชื่อมต่อระบบโทรขาดหาย ปลายทาง:", destination);
   }
   function cameraEnabled() {
     return !!localStream?.getVideoTracks().some(track => track.readyState === "live" && track.enabled);
@@ -206,25 +252,61 @@
     if (!currentRoomId || !peers.has(fromUserId)) return;
     if (signal.type === "ICE") {
       if (!signal.payload || entry.ignoreOffer) return;
-      const candidate = JSON.parse(signal.payload);
-      if (pc.remoteDescription) await pc.addIceCandidate(candidate);
-      else entry.pendingCandidates.push(candidate);
+      try {
+        const candidate = JSON.parse(signal.payload);
+        if (pc.remoteDescription && pc.remoteDescription.type) {
+          await pc.addIceCandidate(candidate);
+        } else {
+          entry.pendingCandidates.push(candidate);
+        }
+      } catch (err) {
+        if (!entry.ignoreOffer) console.warn("ICE candidate error:", err);
+      }
       return;
     }
     if (!signal.payload) return;
-    const description = JSON.parse(signal.payload);
-    const readyForOffer = !entry.makingOffer && (pc.signalingState === "stable" || entry.isSettingRemoteAnswerPending);
-    const offerCollision = description.type === "offer" && !readyForOffer;
-    entry.ignoreOffer = !entry.polite && offerCollision;
-    if (entry.ignoreOffer) return;
-    entry.isSettingRemoteAnswerPending = description.type === "answer";
-    try { await pc.setRemoteDescription(description); }
-    finally { entry.isSettingRemoteAnswerPending = false; }
+    let description;
+    try {
+      description = JSON.parse(signal.payload);
+    } catch (_) {
+      return;
+    }
+
     if (description.type === "offer") {
+      const readyForOffer = !entry.makingOffer && (pc.signalingState === "stable" || entry.isSettingRemoteAnswerPending);
+      const offerCollision = !readyForOffer;
+      entry.ignoreOffer = !entry.polite && offerCollision;
+      if (entry.ignoreOffer) return;
+
+      if (offerCollision && entry.polite) {
+        await Promise.all([
+          pc.setLocalDescription({ type: "rollback" }),
+          pc.setRemoteDescription(description)
+        ]);
+      } else {
+        await pc.setRemoteDescription(description);
+      }
       await pc.setLocalDescription();
       if (currentRoomId) publish(`/app/rooms/${currentRoomId}/call`, { type: "ANSWER", targetUserId: fromUserId, payload: JSON.stringify(pc.localDescription) });
+    } else if (description.type === "answer") {
+      if (pc.signalingState !== "have-local-offer") {
+        return;
+      }
+      entry.isSettingRemoteAnswerPending = true;
+      try {
+        await pc.setRemoteDescription(description);
+      } finally {
+        entry.isSettingRemoteAnswerPending = false;
+      }
     }
-    for (const candidate of entry.pendingCandidates.splice(0)) await pc.addIceCandidate(candidate);
+
+    for (const candidate of entry.pendingCandidates.splice(0)) {
+      try {
+        await pc.addIceCandidate(candidate);
+      } catch (err) {
+        if (!entry.ignoreOffer) console.warn("Pending candidate error:", err);
+      }
+    }
     refreshMediaViews();
   }
   function onCallSignal(signal) {
