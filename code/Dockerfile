@@ -1,10 +1,10 @@
-FROM eclipse-temurin:21-jdk-alpine AS builder
+FROM public.ecr.aws/docker/library/eclipse-temurin:21-jdk-alpine AS builder
 WORKDIR /workspace
 COPY pom.xml mvnw mvnw.cmd ./
 COPY .mvn .mvn
 COPY src src
 RUN chmod +x mvnw && ./mvnw package -Dmaven.test.skip=true
-FROM eclipse-temurin:21-jre-alpine
+FROM public.ecr.aws/docker/library/eclipse-temurin:21-jre-alpine
 RUN apk add --no-cache nodejs && addgroup -S spring && adduser -S spring -G spring
 WORKDIR /app
 COPY --from=builder /workspace/target/*.jar app.jar
