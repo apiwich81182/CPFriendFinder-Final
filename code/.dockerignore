@@ -1,0 +1,11 @@
+target
+.git
+.env*
+!.env.example
+.cloudflare-turn.json
+.turn-servers.json
+*.log
+
+# Never bake a developer datasource/storage configuration into the image.
+src/main/resources/application.properties
+src/main/resources/application-local.properties

@@ -1,0 +1,16 @@
+{
+  "executedAt": "2026-10-09T17:08:16.619Z",
+  "scope": "Actual Spring/H2 HTTP + STOMP and two native browser sessions; disposable accounts, no physical media or external networks",
+  "passed": 9,
+  "checks": [
+    "Concurrent direct creation returns one room for both accounts",
+    "Two authenticated browser sessions receive direct text through actual STOMP",
+    "Own edit broadcasts live to peer; peer cannot see edit control for received text",
+    "Updated direct history survives real browser reload",
+    "Anonymous STOMP CONNECT is rejected",
+    "Authenticated client cannot subscribe to another users notifications",
+    "Authenticated client can subscribe to own notifications",
+    "Non-member cannot subscribe to room messages or updates",
+    "Active member can subscribe to room updates"
+  ]
+}

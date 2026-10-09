@@ -1,0 +1,38 @@
+{
+  "recordedAt": "2026-10-09T17:12:08.186614+00:00",
+  "scope": "Real browser + final Spring application using disposable H2 database at localhost:18080; no shared database, S3 upload or physical-network media acceptance",
+  "passed": 5,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "E2E-004 Register And Login Successfully",
+      "status": "PASS",
+      "started": "2026-10-10T00:08:24.891615",
+      "seconds": "1.242412"
+    },
+    {
+      "name": "E2E-001 Login Page Loads",
+      "status": "PASS",
+      "started": "2026-10-10T00:08:29.383236",
+      "seconds": "0.134526"
+    },
+    {
+      "name": "E2E-002 Password Can Be Shown And Hidden",
+      "status": "PASS",
+      "started": "2026-10-10T00:08:29.526759",
+      "seconds": "0.245170"
+    },
+    {
+      "name": "E2E-003 Register Link Opens Register Page",
+      "status": "PASS",
+      "started": "2026-10-10T00:08:29.779924",
+      "seconds": "0.166652"
+    },
+    {
+      "name": "E2E-005 Selected Interest Is Saved After Registration",
+      "status": "PASS",
+      "started": "2026-10-10T00:08:30.500319",
+      "seconds": "0.777412"
+    }
+  ]
+}

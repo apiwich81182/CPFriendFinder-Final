@@ -1,0 +1,18 @@
+flowchart TD
+A[Open home] --> B[Fetch discovery and watch room updates]
+B --> C[Select room]
+C --> D{Already member?}
+D -->|Yes| F[Resume room without duplicate membership]
+D -->|No| E{Private room?}
+E -->|Yes| P[Enter password]
+P --> V[Validate password and capacity]
+E -->|No| V
+V --> F
+F --> G[Text chat and optional audio/video]
+G --> H{Action}
+H -->|Change page or receive friend call| I[Keep room membership; stop or switch media separately]
+H -->|Leave room| J[Set left_at; update room presence]
+H -->|Owner deletes room| K[Soft delete room; close memberships and calls]
+I --> B
+J --> B
+K --> B

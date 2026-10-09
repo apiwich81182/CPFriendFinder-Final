@@ -1,0 +1,59 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: cpfriendfinder
+      POSTGRES_USER: cpfriendfinder
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in .env}
+    volumes:
+      - database:/var/lib/postgresql/data
+      - ./code/src/main/resources/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./code/src/main/resources/data.sql:/docker-entrypoint-initdb.d/02-data.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U cpfriendfinder -d cpfriendfinder"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  storage:
+    image: minio/minio:latest
+    command: server /data
+    environment:
+      MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID:?Set AWS_ACCESS_KEY_ID in .env}
+      MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY:?Set AWS_SECRET_ACCESS_KEY in .env}
+    volumes:
+      - uploads:/data
+  storage-init:
+    image: minio/mc:latest
+    depends_on: [storage]
+    environment:
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+    entrypoint: [/bin/sh, -c]
+    command:
+      - >-
+        until mc alias set local http://storage:9000 "$$AWS_ACCESS_KEY_ID" "$$AWS_SECRET_ACCESS_KEY" >/dev/null 2>&1; do sleep 2; done;
+        mc mb --ignore-existing local/storage && mc anonymous set download local/storage
+  app:
+    build: ./code
+    ports: ["3000:3000"]
+    depends_on:
+      db: {condition: service_healthy}
+      storage-init: {condition: service_completed_successfully}
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/cpfriendfinder
+      DB_USERNAME: cpfriendfinder
+      DB_PASSWORD: ${DB_PASSWORD}
+      JPA_DDL_AUTO: validate
+      AWS_ENDPOINT_URL_S3: http://storage:9000
+      AWS_PUBLIC_URL_S3: /media
+      STORAGE_PROXY_URL: http://storage:9000
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_REGION: us-east-1
+      CLOUDFLARE_TURN_KEY_ID: ${CLOUDFLARE_TURN_KEY_ID:-}
+      CLOUDFLARE_TURN_API_TOKEN: ${CLOUDFLARE_TURN_API_TOKEN:-}
+      CLOUDFLARE_TURN_TTL: ${CLOUDFLARE_TURN_TTL:-86400}
+    restart: unless-stopped
+volumes:
+  database:
+  uploads:

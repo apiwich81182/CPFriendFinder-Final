@@ -1,0 +1,16 @@
+{
+  "executedAt": "2026-10-09T17:08:10.403790+00:00",
+  "scope": "Actual HTTP APIs and real Spring/JPA with isolated disposable H2 database. No live production data, real S3 uploads or physical media-network tests.",
+  "passed": 9,
+  "checks": [
+    "Two isolated accounts register and authenticate against real Spring/H2",
+    "Biography persists through shared-key profile; public profile exposes current interests without sensitive fields",
+    "Profile rejects oversized biography and foreign retained gallery URL",
+    "Pending/incoming request IDs agree; only receiver accepts; friendship then visible",
+    "Direct text CRUD persists edits, prevents another sender editing, validates blank content and hides soft-deleted history",
+    "Real SQL-backed discovery filters year, sorts and paginates without duplicate skip; rejects invalid sort",
+    "Join is idempotent; call-presence requires authenticated member",
+    "Room CRUD enforces owner-only deletion, closes memberships, hides deleted rooms and prevents rejoin; group history remains live-only",
+    "Swagger UI and OpenAPI load from running backend"
+  ]
+}

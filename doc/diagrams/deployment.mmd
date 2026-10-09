@@ -1,0 +1,16 @@
+flowchart TB
+subgraph Clients
+A[Browser HTTPS] <--> B[Peer browser HTTPS]
+end
+A --> TLS[HTTPS reverse proxy or temporary tunnel]
+B --> TLS
+subgraph Host[Deployment host]
+TLS --> Node[App container: Node :3000]
+Node --> Java[Same container: Spring :8080 loopback]
+Java --> DB[(Private PostgreSQL container)]
+Java --> S3[(Private MinIO container)]
+Node -->|Read-only media proxy| S3
+end
+Node --> API[Cloudflare TURN credential API]
+A <-->|Encrypted relay when needed| TURN[TURN servers]
+B <--> TURN

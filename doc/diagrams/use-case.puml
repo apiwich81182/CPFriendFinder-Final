@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor Student
+actor "Room owner" as Owner
+Owner --|> Student
+rectangle CPFriendFinder {
+ usecase "Register / log in" as Auth
+ usecase "Edit profile, interests and gallery" as Profile
+ usecase "Discover compatible people" as Discover
+ usecase "Send / accept / decline friend request" as Friends
+ usecase "Create / discover / join / leave room" as Rooms
+ usecase "Edit / delete owned room" as Manage
+ usecase "Send text and images" as Chat
+ usecase "Edit own direct text" as Edit
+ usecase "Voice / video / screen sharing" as Call
+ usecase "Read notifications" as Notify
+}
+Student --> Auth
+Student --> Profile
+Student --> Discover
+Student --> Friends
+Student --> Rooms
+Student --> Chat
+Student --> Edit
+Student --> Call
+Student --> Notify
+Owner --> Manage
+@enduml

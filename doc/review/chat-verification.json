@@ -1,0 +1,27 @@
+{
+  "executedAt": "2026-10-09T16:59:30.353Z",
+  "scope": "Native Edge; isolated API/history/storage/signaling fixtures, not real user login or physical cross-network trial",
+  "passed": 19,
+  "checks": [
+    "room: immediate clear, duplicate prevention, retain new draft",
+    "room: no REST/WS duplicate",
+    "room: restore failed draft",
+    "room: real browser image processing and API send",
+    "room: same image icon",
+    "room: live interests and outgoing state",
+    "room: latest incoming request accepted",
+    "room: self profile edit action",
+    "friend: immediate clear, duplicate prevention, retain new draft",
+    "friend: no REST/WS duplicate",
+    "friend: restore failed draft",
+    "friend: real browser image processing and API send",
+    "friend: same image icon",
+    "friend: own text edit replaces existing node",
+    "friend: persisted history fixture reload",
+    "friend: edited history fixture survives reload",
+    "friend: live interests and outgoing state",
+    "friend: latest incoming request accepted",
+    "no browser script errors"
+  ],
+  "errors": []
+}

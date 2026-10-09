@@ -1,0 +1,25 @@
+sequenceDiagram
+actor A as Participant A
+actor B as Participant B
+participant G as Node gateway
+participant S as Spring signaling and chat service
+participant DB as SQL / S3
+participant T as TURN relay
+A->>G: authenticated chat / ICE config
+G->>S: validate session and active membership
+G-->>A: temporary ICE servers
+A->>S: POST message (TEXT or IMAGE)
+S->>DB: DIRECT history / image object
+Note over S,DB: GROUP text is live-only; image URL still stored in object storage
+S-->>A: message response
+S-->>B: STOMP message
+A->>S: OFFER / ICE
+S-->>B: validated signaling
+B->>S: ANSWER / ICE
+S-->>A: signaling
+alt direct connectivity
+A->>B: encrypted WebRTC audio/video/screen
+else NAT needs relay
+A->>T: encrypted WebRTC transport
+T->>B: relay media
+end

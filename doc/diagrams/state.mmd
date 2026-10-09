@@ -1,0 +1,22 @@
+stateDiagram-v2
+state FriendRequest {
+[*] --> PENDING
+PENDING --> ACCEPTED: receiver accepts
+PENDING --> DECLINED: receiver declines
+ACCEPTED --> [*]
+DECLINED --> [*]
+}
+state RandomChatSession {
+[*] --> WAITING
+WAITING --> MATCHED: partner joins
+WAITING --> CANCELLED: waiting cancelled
+MATCHED --> ENDED: participant ends
+CANCELLED --> [*]
+ENDED --> [*]
+}
+state RoomMembership {
+[*] --> Active
+Active --> Active: reload / page navigation
+Active --> Left: explicit leave / room deletion
+Left --> Active: rejoin valid open room
+}

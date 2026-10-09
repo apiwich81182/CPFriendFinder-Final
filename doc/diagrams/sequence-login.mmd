@@ -1,0 +1,21 @@
+sequenceDiagram
+actor Student
+participant UI as Login browser
+participant API as AuthController
+participant S as AuthService
+participant DB as UserRepository
+Student->>UI: Enter email and password
+UI->>API: POST /api/auth/login
+API->>S: login(request)
+S->>DB: find account
+DB-->>S: user / missing
+S->>S: verify password hash and active status
+alt valid account
+S-->>API: safe user DTO
+API->>API: set session userId
+API-->>UI: 200 + session cookie
+UI->>UI: remember current user and navigate home
+else invalid account
+API-->>UI: error status and message
+UI-->>Student: inline feedback; retry enabled
+end

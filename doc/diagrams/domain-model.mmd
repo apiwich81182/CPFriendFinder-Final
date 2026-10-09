@@ -1,0 +1,15 @@
+classDiagram
+User "1" -- "0..1" UserProfile : biography
+User "1" -- "many" UserInterest
+Interest "1" -- "many" UserInterest
+User "1" -- "many" FriendRequest : sender or receiver
+User "1" -- "many" Friendship : either endpoint
+ChatRoom "1" -- "many" RoomMember
+User "1" -- "many" RoomMember
+ChatRoom "1" -- "many" Message
+User "1" -- "many" Message : sender
+ChatRoom "1" -- "many" RoomInterest
+Interest "1" -- "many" RoomInterest
+User "1" -- "many" Notification
+RandomChatSession "1" -- "many" RandomChatMessage
+User "1" -- "many" RandomChatSession : participant

@@ -1,0 +1,15 @@
+{
+  "executedAt": "2026-10-09T16:34:01.009Z",
+  "checks": [
+    "Normal login redirects to home",
+    "Malformed successful response recovers matching session",
+    "Invalid success response never enters home without session",
+    "Wrong password shows account error",
+    "HTML 403 displays explicit server status",
+    "Plain 502 is a server failure rather than JSON/network failure",
+    "Network failure allows retry",
+    "Unavailable browser storage does not block authenticated login"
+  ],
+  "errors": [],
+  "scope": "Eight isolated native-browser response scenarios; no live accounts or public network"
+}

@@ -1,0 +1,1447 @@
+{
+  "scope": "Full Java suite on organized copy, Maven offline with Java21; no real user/network E2E",
+  "totals": {
+    "tests": 219,
+    "passed": 205,
+    "failures": 4,
+    "errors": 10,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "suite": "com.cp.friend.config.AuthSecurityWebMvcTest",
+      "tests": 10,
+      "passed": 0,
+      "failures": 0,
+      "errors": 10,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "publicPages_areNotBlockedBySecurity",
+          "seconds": "0.124",
+          "status": "error"
+        },
+        {
+          "name": "apiLogin_withoutAuthentication_reachesControllerLayer",
+          "seconds": "0.004",
+          "status": "error"
+        },
+        {
+          "name": "websocketRoutes_areNotBlockedBySecurity",
+          "seconds": "0.004",
+          "status": "error"
+        },
+        {
+          "name": "unmatchedRoute_requiresAuthentication",
+          "seconds": "0.005",
+          "status": "error"
+        },
+        {
+          "name": "swaggerRoutes_areNotBlockedBySecurity",
+          "seconds": "0.004",
+          "status": "error"
+        },
+        {
+          "name": "staticResources_areNotBlockedBySecurity",
+          "seconds": "0.005",
+          "status": "error"
+        },
+        {
+          "name": "passwordEncoder_usesSecureHashing",
+          "seconds": "0.003",
+          "status": "error"
+        },
+        {
+          "name": "apiPost_doesNotRequireCsrfToken",
+          "seconds": "0.003",
+          "status": "error"
+        },
+        {
+          "name": "csrfFilter_isDisabled",
+          "seconds": "0.002",
+          "status": "error"
+        },
+        {
+          "name": "formLoginAndHttpBasic_areDisabled",
+          "seconds": "0.003",
+          "status": "error"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.config.WebSocketAuthChannelInterceptorTest",
+      "tests": 2,
+      "passed": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "connect_withAuthenticatedPrincipal_preservesPrincipal",
+          "seconds": "0.556",
+          "status": "passed"
+        },
+        {
+          "name": "connect_withoutAuthenticatedPrincipal_mustNotTrustLoginHeader",
+          "seconds": "0.008",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.AuthControllerMvcTest",
+      "tests": 10,
+      "passed": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "register_futureDateOfBirth_returnsValidationError",
+          "seconds": "2.359",
+          "status": "passed"
+        },
+        {
+          "name": "register_duplicateEmail_returnsBadRequestResponse",
+          "seconds": "0.142",
+          "status": "passed"
+        },
+        {
+          "name": "login_blankPassword_returnsValidationError",
+          "seconds": "0.08",
+          "status": "passed"
+        },
+        {
+          "name": "logout_invalidatesSessionAndReturnsNoContent",
+          "seconds": "0.046",
+          "status": "passed"
+        },
+        {
+          "name": "register_shortPassword_returnsValidationError",
+          "seconds": "0.063",
+          "status": "passed"
+        },
+        {
+          "name": "malformedJson_returnsBadRequest",
+          "seconds": "0.04",
+          "status": "passed"
+        },
+        {
+          "name": "login_serviceRejectsCredentials_returnsBadRequestResponse",
+          "seconds": "0.058",
+          "status": "passed"
+        },
+        {
+          "name": "login_invalidEmail_returnsValidationError",
+          "seconds": "0.049",
+          "status": "passed"
+        },
+        {
+          "name": "login_validRequest_returnsOkAndStoresSession",
+          "seconds": "0.09",
+          "status": "passed"
+        },
+        {
+          "name": "register_validRequest_returnsCreated",
+          "seconds": "0.112",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.ChatMessageControllerMvcTest",
+      "tests": 2,
+      "passed": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "sendMessage_validationAndSession_contract",
+          "seconds": "0.661",
+          "status": "passed"
+        },
+        {
+          "name": "getMessages_invalidBefore_returnsBadRequest",
+          "seconds": "0.045",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.ChatRoomControllerMvcTest",
+      "tests": 1,
+      "passed": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "roomEndpoints_statusAndSession_contract",
+          "seconds": "1.186",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.FriendRequestControllerMvcTest",
+      "tests": 2,
+      "passed": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "send_validRequest_returnsCreated",
+          "seconds": "0.581",
+          "status": "passed"
+        },
+        {
+          "name": "send_invalidInputOrSession_isRejected",
+          "seconds": "0.07",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.FriendshipControllerMvcTest",
+      "tests": 2,
+      "passed": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "unfriend_validRequest_returnsNoContent",
+          "seconds": "0.308",
+          "status": "passed"
+        },
+        {
+          "name": "listFriends_withSession_returnsOk",
+          "seconds": "0.082",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.InterestControllerMvcTest",
+      "tests": 8,
+      "passed": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "createInterest_validRequest_returnsCreated",
+          "seconds": "0.349",
+          "status": "passed"
+        },
+        {
+          "name": "createInterest_nameOver100Characters_returnsValidationError",
+          "seconds": "0.083",
+          "status": "passed"
+        },
+        {
+          "name": "listInterests_withoutSearch_returnsAll",
+          "seconds": "0.062",
+          "status": "passed"
+        },
+        {
+          "name": "createInterest_duplicate_returnsConflict",
+          "seconds": "0.063",
+          "status": "passed"
+        },
+        {
+          "name": "createInterest_blankName_returnsValidationError",
+          "seconds": "0.064",
+          "status": "passed"
+        },
+        {
+          "name": "createInterest_withoutSession_returnsUnauthorized",
+          "seconds": "0.071",
+          "status": "passed"
+        },
+        {
+          "name": "listInterests_blankSearch_returnsAll",
+          "seconds": "2.34",
+          "status": "passed"
+        },
+        {
+          "name": "listInterests_withSearch_returnsMatches",
+          "seconds": "0.069",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.NotificationControllerMvcTest",
+      "tests": 1,
+      "passed": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "notificationEndpoints_enforceStatusAndSession",
+          "seconds": "0.684",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.PageControllerMvcTest",
+      "tests": 3,
+      "passed": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "loginPage_mapsToLoginView",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "registerPage_mapsToRegisterView",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "entry_redirectsToLogin",
+          "seconds": "0.002",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.ProfileSummaryControllerTest",
+      "tests": 6,
+      "passed": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "incomingReturnsActualRequestId",
+          "seconds": "0.034",
+          "status": "passed"
+        },
+        {
+          "name": "outgoingReturnsPending",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "requiresSession",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "loadsInterestsAndSelf",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "inactiveProfileHidden",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "existingFriendTakesPriority",
+          "seconds": "0.005",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.UserControllerMvcTest",
+      "tests": 5,
+      "passed": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "updateMe_futureDate_returnsValidationError",
+          "seconds": "0.242",
+          "status": "passed"
+        },
+        {
+          "name": "updateMe_validRequest_returnsUpdatedProfile",
+          "seconds": "0.063",
+          "status": "passed"
+        },
+        {
+          "name": "getMe_withSession_returnsProfile",
+          "seconds": "0.031",
+          "status": "passed"
+        },
+        {
+          "name": "getMe_withoutSession_returnsUnauthorized",
+          "seconds": "0.025",
+          "status": "passed"
+        },
+        {
+          "name": "updateMe_invalidImageBase64_returnsValidationError",
+          "seconds": "0.055",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.UserDiscoveryControllerMvcTest",
+      "tests": 1,
+      "passed": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "discover_filtersAndSession_areHandled",
+          "seconds": "0.159",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.controller.UserInterestControllerMvcTest",
+      "tests": 8,
+      "passed": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "replaceInterests_withoutSession_returnsUnauthorized",
+          "seconds": "0.101",
+          "status": "passed"
+        },
+        {
+          "name": "getInterests_withSession_returnsInterestDtos",
+          "seconds": "0.052",
+          "status": "passed"
+        },
+        {
+          "name": "replaceInterests_validIds_returnsUpdatedList",
+          "seconds": "0.068",
+          "status": "passed"
+        },
+        {
+          "name": "replaceInterests_emptyList_returnsEmptyList",
+          "seconds": "0.053",
+          "status": "passed"
+        },
+        {
+          "name": "replaceInterests_nullItem_returnsValidationError",
+          "seconds": "0.076",
+          "status": "passed"
+        },
+        {
+          "name": "replaceInterests_nullInterestIds_returnsValidationError",
+          "seconds": "0.073",
+          "status": "passed"
+        },
+        {
+          "name": "getInterests_withoutSession_returnsUnauthorized",
+          "seconds": "0.051",
+          "status": "passed"
+        },
+        {
+          "name": "replaceInterests_invalidInterest_returnsBadRequest",
+          "seconds": "0.076",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.FriendApplicationTests",
+      "tests": 1,
+      "passed": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "contextLoads",
+          "seconds": "0.038",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.frontend.CallFrontendContractTest",
+      "tests": 10,
+      "passed": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "callJs_leaveSignal_notifiesUiThatCallEnded",
+          "seconds": "0.003",
+          "status": "passed"
+        },
+        {
+          "name": "callJs_handlesIncomingMediaSignal",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "voiceCallEnd_cancelsPendingOutgoingCall",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "friendJs_handlesRemoteCallEndedEvent",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "videoCallEnd_cancelsPendingOutgoingCall",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "cameraToggle_publishesMediaState",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "globalCall_acceptRedirectsToFriendWithPendingCall",
+          "seconds": "0.017",
+          "status": "passed"
+        },
+        {
+          "name": "authenticatedPages_loadGlobalIncomingCallSupport",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "callJs_doesNotContainHardcodedTurnCredentials",
+          "seconds": "0.018",
+          "status": "passed"
+        },
+        {
+          "name": "friendPage_resumesPendingIncomingCall",
+          "seconds": "0.003",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.frontend.FrontendAuthContractTest",
+      "tests": 6,
+      "passed": 2,
+      "failures": 4,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "loginJavascript_storesUserAndRedirectsHome",
+          "seconds": "0.04",
+          "status": "failure"
+        },
+        {
+          "name": "registerJavascript_callsCorrectBackendEndpoint",
+          "seconds": "0.907",
+          "status": "failure"
+        },
+        {
+          "name": "registerJavascript_validatesPasswordAndRedirectsLogin",
+          "seconds": "0.007",
+          "status": "failure"
+        },
+        {
+          "name": "registerTemplate_containsInputsUsedByJavascript",
+          "seconds": "0.19",
+          "status": "passed"
+        },
+        {
+          "name": "loginTemplate_containsInputsUsedByJavascript",
+          "seconds": "0.013",
+          "status": "passed"
+        },
+        {
+          "name": "loginJavascript_callsCorrectBackendEndpoint",
+          "seconds": "0.01",
+          "status": "failure"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.integration.FriendNotificationChatContractTest",
+      "tests": 8,
+      "passed": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "friendJs_loadsCurrentUserFromUsersMe",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "friendJs_opensDirectRoom",
+          "seconds": "0.001",
+          "status": "passed"
+        },
+        {
+          "name": "friendJs_sendsTextMessage",
+          "seconds": "0.001",
+          "status": "passed"
+        },
+        {
+          "name": "notificationJs_loadsMessageNotifications",
+          "seconds": "0.001",
+          "status": "passed"
+        },
+        {
+          "name": "notificationJs_acceptDecline_endpointsMatch",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "notificationJs_loadsIncomingFriendRequests",
+          "seconds": "0.003",
+          "status": "passed"
+        },
+        {
+          "name": "friendJs_callsFriendsApi",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "friendJs_loadsMessageHistory",
+          "seconds": "0.001",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.AuthServiceLoginTest",
+      "tests": 11,
+      "passed": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "login_blockedAccount_doesNotCheckPassword",
+          "seconds": "0.266",
+          "status": "passed"
+        },
+        {
+          "name": "login_wrongPassword_rejected",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "login_nullPassword_rejected",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "login_blankPassword_rejected",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "login_nullRequest_rejected",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "login_unknownEmail_rejected",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "login_validCredentials_returnsUser",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "login_blockedAccount_rejected",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "login_spacedUppercaseEmail_normalized",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "login_nullEmail_rejected",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "login_blankEmail_rejected",
+          "seconds": "0.005",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.AuthServiceRegisterTest",
+      "tests": 15,
+      "passed": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "register_password_isEncodedBeforeSave",
+          "seconds": "0.015",
+          "status": "passed"
+        },
+        {
+          "name": "register_withInterests_savesUserInterests",
+          "seconds": "0.174",
+          "status": "passed"
+        },
+        {
+          "name": "register_withoutImage_doesNotCallStorage",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "register_blankPassword_rejected",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "register_withImage_uploadsAndStoresPublicUrl",
+          "seconds": "0.01",
+          "status": "passed"
+        },
+        {
+          "name": "register_duplicateEmail_rejected",
+          "seconds": "0.013",
+          "status": "passed"
+        },
+        {
+          "name": "register_nullRequest_rejected",
+          "seconds": "0.012",
+          "status": "passed"
+        },
+        {
+          "name": "register_validRequest_savesActiveUser",
+          "seconds": "0.01",
+          "status": "passed"
+        },
+        {
+          "name": "register_withoutInterests_doesNotSaveUserInterests",
+          "seconds": "0.012",
+          "status": "passed"
+        },
+        {
+          "name": "register_profileFields_areCopied",
+          "seconds": "0.012",
+          "status": "passed"
+        },
+        {
+          "name": "register_spacedUppercaseEmail_normalized",
+          "seconds": "0.011",
+          "status": "passed"
+        },
+        {
+          "name": "register_nullEmail_rejected",
+          "seconds": "0.011",
+          "status": "passed"
+        },
+        {
+          "name": "register_passwordBelowEightCharacters_rejected",
+          "seconds": "0.01",
+          "status": "passed"
+        },
+        {
+          "name": "register_blankEmail_rejected",
+          "seconds": "0.011",
+          "status": "passed"
+        },
+        {
+          "name": "register_nullPassword_rejected",
+          "seconds": "0.008",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.ChatMessageServiceTest",
+      "tests": 15,
+      "passed": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "getMessages_directRoom_reversesAndMarksRead",
+          "seconds": "1.274",
+          "status": "passed"
+        },
+        {
+          "name": "relayCallSignal_leave_neverMember_returnsForbidden",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "send_direct_persistsBroadcastsAndNotifies",
+          "seconds": "0.019",
+          "status": "passed"
+        },
+        {
+          "name": "delete_otherUsersMessage_returnsForbidden",
+          "seconds": "0.012",
+          "status": "passed"
+        },
+        {
+          "name": "getMessages_nonMember_returnsForbidden",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "getMessages_limitAndBefore_areHandled",
+          "seconds": "0.009",
+          "status": "passed"
+        },
+        {
+          "name": "send_messageType_defaultAndInvalid_areHandled",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "delete_ownMessage_softDeletes",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "relayCallInvite_accept_preservesModeAndOldClientsDefaultToVoice",
+          "seconds": "0.013",
+          "status": "passed"
+        },
+        {
+          "name": "unreadCount_usesCorrectRepositoryQuery",
+          "seconds": "0.011",
+          "status": "passed"
+        },
+        {
+          "name": "send_group_broadcastsWithoutPersistence",
+          "seconds": "0.01",
+          "status": "passed"
+        },
+        {
+          "name": "relayCallInvite_invalidMode_isRejected",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "getMessages_groupRoom_returnsEmpty",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "relayCallInvite_videoMode_reachesReceiver",
+          "seconds": "0.009",
+          "status": "passed"
+        },
+        {
+          "name": "relayCallSignal_leave_afterMembershipEnded_stillBroadcasts",
+          "seconds": "0.011",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.ChatRoomServiceTest",
+      "tests": 14,
+      "passed": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "createGroupRoom_private_encodesPassword",
+          "seconds": "0.361",
+          "status": "passed"
+        },
+        {
+          "name": "createGroupRoom_privateWithoutPassword_returnsBadRequest",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "directRoom_keepsExistingConversationId",
+          "seconds": "0.01",
+          "status": "passed"
+        },
+        {
+          "name": "updateRoom_permissionAndMemberLimit_areEnforced",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "createGroupRoom_publicRoom_appliesDefaultsAndOwner",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "leaveRoom_nonMember_returnsNotFound",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "joinRoom_fullRoom_returnsConflict",
+          "seconds": "0.009",
+          "status": "passed"
+        },
+        {
+          "name": "joinRoom_existingMember_resumesWithoutDuplicatingMembership",
+          "seconds": "0.011",
+          "status": "passed"
+        },
+        {
+          "name": "discoverRooms_searchAndInterests_intersectsResults",
+          "seconds": "0.011",
+          "status": "passed"
+        },
+        {
+          "name": "joinRoom_privateWrongPassword_returnsForbidden",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "directRoom_reopensHistoricalConversationWithoutCreatingRoom",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "directRoom_selfOrNonFriend_isRejected",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "createGroupRoom_invalidInterest_returnsBadRequest",
+          "seconds": "0.122",
+          "status": "passed"
+        },
+        {
+          "name": "joinRoom_existingMember_resumesPrivateFullRoomWithoutPassword",
+          "seconds": "0.01",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.FriendRequestServiceTest",
+      "tests": 13,
+      "passed": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "accept_existingFriendship_doesNotDuplicate",
+          "seconds": "0.355",
+          "status": "passed"
+        },
+        {
+          "name": "accept_validReceiver_createsFriendshipAndPublishesEvent",
+          "seconds": "0.011",
+          "status": "passed"
+        },
+        {
+          "name": "incoming_returnsPendingRequests",
+          "seconds": "0.009",
+          "status": "passed"
+        },
+        {
+          "name": "accept_missingRequest_returnsNotFound",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "outgoing_returnsPendingRequests",
+          "seconds": "0.01",
+          "status": "passed"
+        },
+        {
+          "name": "accept_nonPending_returnsConflict",
+          "seconds": "0.009",
+          "status": "passed"
+        },
+        {
+          "name": "send_toSelf_returnsBadRequest",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "send_pendingRequest_returnsConflict",
+          "seconds": "0.013",
+          "status": "passed"
+        },
+        {
+          "name": "accept_nonReceiver_returnsForbidden",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "decline_validReceiver_marksDeclined",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "send_existingFriendship_returnsConflict",
+          "seconds": "0.01",
+          "status": "passed"
+        },
+        {
+          "name": "send_validUsers_savesPendingAndPublishesEvent",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "send_receiverUnavailable_returnsNotFound",
+          "seconds": "0.009",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.FriendshipServiceTest",
+      "tests": 4,
+      "passed": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "unfriend_existingFriendship_deletesRelation",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "listFriends_inactiveOrMissingUser_returnsNotFound",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "unfriend_missingFriendship_returnsNotFound",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "listFriends_returnsMappedFriends",
+          "seconds": "0.01",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.ImageContentStrategyTest",
+      "tests": 3,
+      "passed": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "savesRealImageUrl",
+          "seconds": "6.48",
+          "status": "passed"
+        },
+        {
+          "name": "refusesSvgBeforeStorage",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "refusesNonImageBeforeStorage",
+          "seconds": "0.012",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.InterestServiceTest",
+      "tests": 5,
+      "passed": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "createInterest_duplicateName_returnsConflict",
+          "seconds": "0.012",
+          "status": "passed"
+        },
+        {
+          "name": "createInterest_validName_trimsAndSaves",
+          "seconds": "0.01",
+          "status": "passed"
+        },
+        {
+          "name": "allInterests_returnsActiveInterestsOrderedByRepository",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "searchInterests_trimsSearchText",
+          "seconds": "0.009",
+          "status": "passed"
+        },
+        {
+          "name": "searchInterests_blankText_returnsBadRequest",
+          "seconds": "0.006",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.MatchingServiceTest",
+      "tests": 4,
+      "passed": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "testUserNotFoundThrows",
+          "seconds": "0.023",
+          "status": "passed"
+        },
+        {
+          "name": "testCalculateCompatibility",
+          "seconds": "0.033",
+          "status": "passed"
+        },
+        {
+          "name": "testRecommendFriendsRanked",
+          "seconds": "0.033",
+          "status": "passed"
+        },
+        {
+          "name": "testExcludeExistingFriendsAndPending",
+          "seconds": "0.01",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.NotificationServiceTest",
+      "tests": 9,
+      "passed": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "list_outOfRangePagination_isClamped",
+          "seconds": "0.367",
+          "status": "passed"
+        },
+        {
+          "name": "onFriendRequestAccepted_savesAndPushesNotification",
+          "seconds": "0.009",
+          "status": "passed"
+        },
+        {
+          "name": "markAsRead_callsScopedUpdate",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "list_allNotifications_mapsResponses",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "onFriendRequestSent_savesAndPushesNotification",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "notifyNewMessage_reusesUnreadAndSkipsSender",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "list_unreadOnly_usesUnreadRepositoryQuery",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "unreadCount_returnsRepositoryCount",
+          "seconds": "0.003",
+          "status": "passed"
+        },
+        {
+          "name": "markAllAsRead_callsRepository",
+          "seconds": "0.004",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.ProfileGalleryTest",
+      "tests": 9,
+      "passed": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "retainedPhotosCanBeReordered",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "emptyGalleryClearsAndAllowsAvatarFallback",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "realImageIsUploadedAndIncludedInProfileResponse",
+          "seconds": "0.014",
+          "status": "passed"
+        },
+        {
+          "name": "disguisedImageIsRejectedBeforeUpload",
+          "seconds": "0.007",
+          "status": "passed"
+        },
+        {
+          "name": "moreThanFivePhotosIsRejected",
+          "seconds": "0.003",
+          "status": "passed"
+        },
+        {
+          "name": "interestSelectionIsUpdatedWithProfile",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "omittedGalleryPreservesExistingPhotos",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "anotherUsersPhotoUrlIsRejected",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "validAndEmptyPhotoSourcesCannotBeMixed",
+          "seconds": "0.003",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.RoomRealtimeServiceTest",
+      "tests": 6,
+      "passed": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "mediaAloneDoesNotCreateParticipant",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "membershipBroadcastsToRoomAndHome",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "lateObserverReceivesExistingParticipantsAndMedia",
+          "seconds": "0.003",
+          "status": "passed"
+        },
+        {
+          "name": "explicitLeaveRemovesParticipantAndAdvancesRevision",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "disconnectKeepsAnotherTabUntilLastSessionCloses",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "leavingMembershipRemovesAllCallSessions",
+          "seconds": "0.002",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.UserDiscoveryServiceTest",
+      "tests": 5,
+      "passed": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "discover_excludesSelfFriendsAndPending",
+          "seconds": "0.012",
+          "status": "passed"
+        },
+        {
+          "name": "discover_departmentFilter_isTrimmedAndCaseInsensitive",
+          "seconds": "0.006",
+          "status": "passed"
+        },
+        {
+          "name": "discover_excludesInactiveCandidates",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "discover_yearFilter_returnsMatchingYear",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "discover_noMatches_returnsEmpty",
+          "seconds": "0.005",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.UserInterestServiceTest",
+      "tests": 7,
+      "passed": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "replaceInterests_validIds_replacesAndReturnsSortedList",
+          "seconds": "0.008",
+          "status": "passed"
+        },
+        {
+          "name": "getInterests_missingUser_returnsNotFound",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "replaceInterests_emptyList_clearsAllInterests",
+          "seconds": "0.003",
+          "status": "passed"
+        },
+        {
+          "name": "replaceInterests_duplicateIds_savesOnlyOneRelation",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "getInterests_existingUser_returnsActiveInterestsSortedByName",
+          "seconds": "0.003",
+          "status": "passed"
+        },
+        {
+          "name": "replaceInterests_missingOrInactiveInterest_returnsBadRequest",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "getInterests_noAssignedInterests_returnsEmptyList",
+          "seconds": "0.003",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.service.UserServiceTest",
+      "tests": 7,
+      "passed": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "updateProfile_updatesProvidedFields",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "updateProfile_withoutImage_doesNotCallStorage",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "updateProfile_omittedFields_keepOldValues",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "getProfile_missingUser_returnsNotFound",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "updateProfile_blankFirstname_clearsFirstname",
+          "seconds": "0.004",
+          "status": "passed"
+        },
+        {
+          "name": "updateProfile_withImage_uploadsAndStoresUrl",
+          "seconds": "0.005",
+          "status": "passed"
+        },
+        {
+          "name": "getProfile_existingUser_returnsUser",
+          "seconds": "0.003",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "suite": "com.cp.friend.strategy.InterestMatchingStrategyTest",
+      "tests": 6,
+      "passed": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "testCaseInsensitiveMatching",
+          "seconds": "0.003",
+          "status": "passed"
+        },
+        {
+          "name": "testFullMatch",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "testStrategyName",
+          "seconds": "0.001",
+          "status": "passed"
+        },
+        {
+          "name": "testEmptyAndNullScenarios",
+          "seconds": "0.001",
+          "status": "passed"
+        },
+        {
+          "name": "testZeroMatch",
+          "seconds": "0.002",
+          "status": "passed"
+        },
+        {
+          "name": "testPartialMatchFromRequirements",
+          "seconds": "0.001",
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

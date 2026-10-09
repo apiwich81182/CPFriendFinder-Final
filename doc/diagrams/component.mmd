@@ -1,0 +1,15 @@
+flowchart LR
+Browser[Thymeleaf browser + JS] --> Gateway[Node same-origin gateway]
+Gateway --> MVC[Spring REST / MVC]
+Gateway --> WS[Spring WebSocket / STOMP]
+MVC --> Services[Transactional application services]
+WS --> Services
+Services --> Repo[JPA repositories]
+Repo --> SQL[(PostgreSQL)]
+Services --> Storage[StoragePort / S3 adapter]
+Storage --> Objects[(Object storage)]
+Services --> Events[Domain events]
+Events --> Notifications[Notification observer]
+Notifications --> WS
+Gateway --> TURNAPI[Cloudflare temporary credential API]
+Browser <-->|WebRTC media| Peers[Peer browsers / TURN relay]

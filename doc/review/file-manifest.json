@@ -1,0 +1,1617 @@
+[
+  {
+    "path": ".env.example",
+    "bytes": 214,
+    "sha256": "6900771b1a76b03dc7f6c500f79d4b977ea5437bc4c5863273eb945dc96cf68a"
+  },
+  {
+    "path": ".gitattributes",
+    "bytes": 40,
+    "sha256": "18be76f9008af08719be1d98d291e1286907ad6df86e7bd4e2dbed4ce0903fe8"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 1013,
+    "sha256": "d81852380919106b8a667af709ecf3bcb9a9a272104f45efb00abc3d79c3ce2e"
+  },
+  {
+    "path": "code/.dockerignore",
+    "bytes": 255,
+    "sha256": "b0ea007334e151dc3a15f2d9b4f96b81a8769569c06cef6c33ec682595744e4f"
+  },
+  {
+    "path": "code/.env.example",
+    "bytes": 604,
+    "sha256": "57091e186bbdb60562923c3cc753b823ca2fd3c29fb3a5469145bafafc89c131"
+  },
+  {
+    "path": "code/.mvn/wrapper/maven-wrapper.properties",
+    "bytes": 171,
+    "sha256": "1f3cf0a7111d2b54736d1f89d7e93f1f143f8b3d5a58a5bb46e3b60b3eebd931"
+  },
+  {
+    "path": "code/cloudflare-turn.js",
+    "bytes": 4044,
+    "sha256": "a60f291f8ca3d51519194f5afe90c01344c5c11199fa9ea00e29444a773ca16c"
+  },
+  {
+    "path": "code/container-start.sh",
+    "bytes": 368,
+    "sha256": "950154c5ec3f43898a51c1bba2b99b61670c7f7d582e5914349db886354b9fd0"
+  },
+  {
+    "path": "code/Dockerfile",
+    "bytes": 691,
+    "sha256": "25fd36532702a85a5b06e7d9f060d82ee826ce034ac5beaa751d370854e6a9ed"
+  },
+  {
+    "path": "code/mvnw",
+    "bytes": 11790,
+    "sha256": "cae96cef89ebea3531221f4ae17c23cf8edf67d00eae8306d4186ae1bbed4d02"
+  },
+  {
+    "path": "code/mvnw.cmd",
+    "bytes": 8481,
+    "sha256": "46eedb8419bd14fe70d5bb2916d7b6f51806e51b39d5b76a42610384ca929c1c"
+  },
+  {
+    "path": "code/pom.xml",
+    "bytes": 3752,
+    "sha256": "2bfe4eb68a53daab61793d0bf4cc3f179a13f6f0dbf97b02277794906480bb4b"
+  },
+  {
+    "path": "code/server.js",
+    "bytes": 5207,
+    "sha256": "932d857d64256a4d69bb35159b876320126e4e6e21abb04de99017881f010ab7"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/config/HttpSessionHandshakeHandler.java",
+    "bytes": 1297,
+    "sha256": "51857ad634950c2924588e9b050f7fcfe1527f7ea0c0eeb2a2367fba7fb5dfdd"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/config/S3Config.java",
+    "bytes": 1630,
+    "sha256": "1fce75f1ac55e853590ee08eeea6c492c1badb96824c0a0d2646af3333acf9c4"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/config/SecurityConfig.java",
+    "bytes": 4175,
+    "sha256": "e51933e54078812bfad7f158bd8498d1fa551d4e777c22e4906ef7e2b0fcd064"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/config/SessionHandshakeInterceptor.java",
+    "bytes": 950,
+    "sha256": "9004fc67105386cd1dc5160fd4f7f6ef6fc41900d400de742d18550249a6d22e"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/config/WebSocketAuthChannelInterceptor.java",
+    "bytes": 2099,
+    "sha256": "9166ed4af565dcd94f7fd3a18f6485b1543efe662ff3b84ff18212a33f81dc6d"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/config/WebSocketConfig.java",
+    "bytes": 2257,
+    "sha256": "076551ac59a90e60ddd0f2b8c519a5b5c665beb301f2e9b9f0727bdff9e6f178"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/AuthController.java",
+    "bytes": 1930,
+    "sha256": "8203be88b02befe7b8f1d6c04943934f67383b6cd768e4c5b724b3e4e021c800"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/ChatMessageController.java",
+    "bytes": 4194,
+    "sha256": "a2ab441d929a84b57138fa05973842b4cc80176ca7ec9a8400e274b2e6de6bdd"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/ChatRoomController.java",
+    "bytes": 6328,
+    "sha256": "7879fcbfc3db91076d423949b3c17d090348f58e85eec6863fee07cd079d9a4f"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/ChatWsController.java",
+    "bytes": 4125,
+    "sha256": "a0d9905c8ea56c0aecf16f3b1271af2b715997d5f9663e02a5ffb7dfefa31aa0"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/FriendRequestController.java",
+    "bytes": 2402,
+    "sha256": "5ba4fc4f5c0d3c33a296868af0aa4a1e61d70517079dc09f1880012a618a1b08"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/FriendshipController.java",
+    "bytes": 1348,
+    "sha256": "b6c7e04fbcf730fa5bf278d3c694d9cd114e2df06568534cbf734256e7f50170"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/InterestController.java",
+    "bytes": 2148,
+    "sha256": "0a957d5742ba23de272c527321ff56a7b2128c93d8f15d467e1499aa784b3729"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/MatchingController.java",
+    "bytes": 2292,
+    "sha256": "3660b49428c975832b19b410957e11ece9343415e6fd2c637adf31de8d394b3c"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/NotificationController.java",
+    "bytes": 2557,
+    "sha256": "1ed0f67586b02222e22e6e139c39c6a262c21ac9e456cca7235fd37ba09285d0"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/PageController.java",
+    "bytes": 995,
+    "sha256": "690a7df38a987d605f998ebe294d8eaefab92ae203830da79e934bc88bbe659f"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/PageModelAdvice.java",
+    "bytes": 1021,
+    "sha256": "55dd59bc1e22bdf4c4d098e5e3fad681671ffd81f04026132072c5f68aa75f2f"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/ProfileSummaryController.java",
+    "bytes": 683,
+    "sha256": "97a98fae6d152b9a03d8883acfb65ac93b4179b04d760fad17d265a295c682d0"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/RoomPresenceController.java",
+    "bytes": 1016,
+    "sha256": "0edf0df2f41afb8fff3b3229b89229290d23eb6dc064fff91f33513db58e689c"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/SessionController.java",
+    "bytes": 795,
+    "sha256": "846786d3e16065bf16fae22fe111c2340b2bbffb427cb43bce5176af4ab01916"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/UserController.java",
+    "bytes": 1741,
+    "sha256": "b442932904bf73840e098e3655eae6df542e82b90837628ed0934ccfe6fb5c44"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/UserDiscoveryController.java",
+    "bytes": 1233,
+    "sha256": "9a84851fd782712265975f7942b8ba2f86b8448bd9cc9f8909d7ef5dd14dd026"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/controller/UserInterestController.java",
+    "bytes": 1814,
+    "sha256": "0d89661b0876bccad860910dcb2ef181fe2ed2d22b352f72d9ae9c0503adef16"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/matching/MatchCandidateResponse.java",
+    "bytes": 4916,
+    "sha256": "5a3d954712f571a0372df7eb39a54c0819374534957f89dc6194e79b3ed045bb"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/CallInviteRequest.java",
+    "bytes": 886,
+    "sha256": "d3745899d34cbf145705bf1da2a4e8d29b3075aa1e0df3102aa2f1e20c5f33f8"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/CallSignalRequest.java",
+    "bytes": 650,
+    "sha256": "0d6846910e097a89e9265254f98b78fab4c7ec78098f60814e703f6aa27c782f"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/ChatMessagePayload.java",
+    "bytes": 922,
+    "sha256": "a3e474c30730d712a0175e6280d859fe533c4513b7b229a6b5026602fe9eedd9"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/CreateChatRoomRequest.java",
+    "bytes": 1470,
+    "sha256": "24f79f22c8e358e0fcead3eaf4531bf388d584a2256b672a2367c9541602a092"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/CreateFriendRequestRequest.java",
+    "bytes": 244,
+    "sha256": "0821e76d1ac3ffce975d4bfa5fa505c4a17e24c71d4e22604219a6bfaa1233ab"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/CreateInterestRequest.java",
+    "bytes": 325,
+    "sha256": "75824950690f3fb44cf99e59a96cf3a30f49eefc5990b55cf8062ed12cc4da07"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/EditMessageRequest.java",
+    "bytes": 157,
+    "sha256": "5ca295ea2f1ddab839d33b5e3905a04403e4fa828e926b7a4e869e1ae5cf7fb6"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/JoinChatRoomRequest.java",
+    "bytes": 372,
+    "sha256": "ba7fad5c2e5a60c8cf5c6fe7f9e9a5c33edf6cc84ebc1f924abe89bfe19659b4"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/LoginRequest.java",
+    "bytes": 451,
+    "sha256": "b5eb8ecd8f9f3d25a78d528b6dcdf6124fdc822b42d161163eab5957b7aa5810"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/RegisterRequest.java",
+    "bytes": 1592,
+    "sha256": "c60ca119418c68c2f2648a567c3918601ebde5f0aedaa3b6e1415d72eef520e8"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/UpdateChatRoomRequest.java",
+    "bytes": 1375,
+    "sha256": "2ba5609da0429670aeca24f0527d83dde90ed863e77803d9813d820bafe87390"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/UpdateMemberRoleRequest.java",
+    "bytes": 371,
+    "sha256": "3bb7ba1b9c2828ed7cf869e064d4f0ce5b561b47ed99ce740eff1d6611669be3"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/UpdateProfileRequest.java",
+    "bytes": 1856,
+    "sha256": "ef00e38b811b86c1e81adb8126ce96d3d1da5aa0b2305b2b9059bd8e8bd6f4ec"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/request/UpdateUserInterestsRequest.java",
+    "bytes": 332,
+    "sha256": "a39118b269fc96d547c064f64cc6c5c07f6e842cf119a5a86763595267da2668"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/CallInviteSignal.java",
+    "bytes": 869,
+    "sha256": "2aebafed554732519eb95e6502e2d08786a5787fe80e7db7d5d9bbbd5d7f4570"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/CallSignalResponse.java",
+    "bytes": 662,
+    "sha256": "0e3adbd6a73de0a3505da47ec2dd327369f54c4df293b03180329e0a8dac7327"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/ChatMessageResponse.java",
+    "bytes": 430,
+    "sha256": "1f085bbd0f98b9f36557bd08a84e279f4bf0fef52d7471cacec90c19fc3045cb"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/ChatRoomDetailResponse.java",
+    "bytes": 3106,
+    "sha256": "026d64452d1dd198576d844fa56cdbba85397d437579cf45bfcf61669fd8c061"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/ChatRoomSummaryResponse.java",
+    "bytes": 677,
+    "sha256": "b85776dd7148f534e55ebd1b706e0d32c98037e04c20b890786433d08c93aaae"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/FriendRequestResponse.java",
+    "bytes": 807,
+    "sha256": "a4ae5e207c0f76ed8f47b262115385f794dfc7c27af7ae075846b8a86dc4c5b4"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/FriendResponse.java",
+    "bytes": 401,
+    "sha256": "d221819690adbff9f0018c470ebece1e7de12051b24d37c80bc19d5131d1e94e"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/InterestResponse.java",
+    "bytes": 312,
+    "sha256": "b425f4595171f6c41fff6cb477a09ede5ad91c2ee9d2c98935833138f54ae4a7"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/LoginResponse.java",
+    "bytes": 688,
+    "sha256": "12cabd85306c1bc59be7f7ac54c8825d70a7a3814a1d5361a4cf412a358e94ca"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/NotificationResponse.java",
+    "bytes": 712,
+    "sha256": "1dc23339e38d2bf60814722807a43cef9a72d792cb7fa44dc4bd12f38f4dfb94"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/ProfileSummaryResponse.java",
+    "bytes": 260,
+    "sha256": "38d21f018db1e0c23d557a44263bc625b85506715a372312aa2031f903c10ef8"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/RegisterResponse.java",
+    "bytes": 686,
+    "sha256": "893761b1f236a61788244f04c1aa50b63c6522f04a7568fe87730336f30a105e"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/UpdateProfileResponse.java",
+    "bytes": 1243,
+    "sha256": "76874c84231691513665aaea397b0397158251d3227552005df1ce400a94977d"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/dto/response/UserDiscoveryResponse.java",
+    "bytes": 242,
+    "sha256": "7eecb0f2b32a50526bf836ae939506b6e7ee2a155f0d0d0a329e84015efa2cca"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/event/FriendRequestAcceptedEvent.java",
+    "bytes": 276,
+    "sha256": "c3b73016558f45e8888f79bf21bc8128e37ff5685015a800598fef3df2496a35"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/event/FriendRequestDeclinedEvent.java",
+    "bytes": 352,
+    "sha256": "0c310c0fd59f7a665386edefa622234d5397ff596ec91b0f294ec05ce77df260"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/event/FriendRequestSentEvent.java",
+    "bytes": 406,
+    "sha256": "867b9df9812394d92a2cfcbfed52169edd76385dc412734d0e24a9bdea98e70a"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/exception/ApiResponse.java",
+    "bytes": 166,
+    "sha256": "b7bea4b072f15a9c2cf92b757bf567e85528e8ba0b6c88b12582c4a03c0bdef6"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/exception/GlobalExceptionHandler.java",
+    "bytes": 2439,
+    "sha256": "1bf96416bc49ea98a4d910e7a3090c72bfd9757b67942e103a35b1458b53288d"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/exception/ValidationError.java",
+    "bytes": 123,
+    "sha256": "d1bcc3b911232886cdf89740b40540a37179bd8afa28627b77ae2beb7b66aa73"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/factory/NotificationFactory.java",
+    "bytes": 3628,
+    "sha256": "904aab532d17a785fb5ea199861c30d193f71863130c76b51dea35bbb57752a1"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/FriendApplication.java",
+    "bytes": 319,
+    "sha256": "8d0f46fc22ef9fd40395846e52b5ae7e56f34fab4492519f2b335b7b9f394f48"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/mapper/InterestMapper.java",
+    "bytes": 849,
+    "sha256": "05bd4d7b5692c03c85ffc5edc6bd75ed4ce9d0c2f84392c3e92ac2a18d1059cf"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/mapper/UserMapper.java",
+    "bytes": 500,
+    "sha256": "b691c87f33858f9d2d7b9fdf72b4e18e4934bdccb9adca24bfd41a98abc47299"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/ChatRoom.java",
+    "bytes": 1824,
+    "sha256": "5b30cc6d1593d7f7e8ed16a4bd9ff39da23df45973ff53571cbe41d34559e459"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/FriendRequest.java",
+    "bytes": 1236,
+    "sha256": "b23ed56cc98169bd108808668f08fb68ea2497b691d8d33920c1720b919080ad"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/Friendship.java",
+    "bytes": 1150,
+    "sha256": "76d22e5d62bca01d1d9b1c2e2da53efdd488a3576fe9e14218c3a625d80e44c8"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/Interest.java",
+    "bytes": 1224,
+    "sha256": "997a202c81324ab12ccd8d3996ceb22d39e9f904e8ca82694f1a4a7a5b0b993c"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/Message.java",
+    "bytes": 1419,
+    "sha256": "0251a13f647241a9222307a4bb4953a36fe069bff05e6c7825059358f07ac0cb"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/Notification.java",
+    "bytes": 1414,
+    "sha256": "d930353c2b2766cb6a51499814e307ab83a37afe85f596fc81990c1c5d4fab51"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/RandomChatMessage.java",
+    "bytes": 1468,
+    "sha256": "ec0262e3ffdd4a43dafdd81b1c0284c8ee601bc4e7c66f4606b0f81577ed36e0"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/RandomChatSession.java",
+    "bytes": 1340,
+    "sha256": "ffeb7ae8ede0e46161df9f1849b9f0668755ebad85fa1fd30e6415d8dbae5650"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/RoomInterest.java",
+    "bytes": 1200,
+    "sha256": "32656c225cb9057cee5bca7e84a2f4f17e87680967c2ec098e5764694735e589"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/RoomMember.java",
+    "bytes": 1363,
+    "sha256": "472539e111a0a58c4447743948314a9196f1a220fb1eb0b189fb54e6023e3784"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/User.java",
+    "bytes": 4418,
+    "sha256": "bde18ec708ee5744081b62910552f4ac0cbcd404dda580134635cbc0228a5abc"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/UserInterest.java",
+    "bytes": 1192,
+    "sha256": "e5e9ea1a7adadedecc59fc44feb4522ca7b4b28da6ef5ce9f8c96c98e8b7af08"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/model/UserProfile.java",
+    "bytes": 459,
+    "sha256": "a3f569683dc72130f79fa72be067ba549883a29e78addeafeee076228ed236d6"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/observer/NotificationObserver.java",
+    "bytes": 644,
+    "sha256": "151a6d4ccd20befeb21e09e634cacf1be896ee0c575a87386dddf39897592afc"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/port/MessageNotifications.java",
+    "bytes": 149,
+    "sha256": "08521d7551c0b374b8743359ca9830d5fc7e84a546315a475106e396e14cfd3e"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/port/StoragePort.java",
+    "bytes": 748,
+    "sha256": "628b81dcc389f469b3d238638154d4b84d7dc82340247c99feabcf12ac8f8d96"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/ChatRoomRepository.java",
+    "bytes": 3521,
+    "sha256": "83f693a8d917dad7a9c2da851486baffd1b8211fa8b0e184bfb114acb02f3427"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/FriendRequestRepository.java",
+    "bytes": 2545,
+    "sha256": "02a68be188d27bd7fe0a0ff671601f9aa08e386bab6e8de65cdaa85ae14ff2fe"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/FriendshipRepository.java",
+    "bytes": 2483,
+    "sha256": "0d4eed6a404891d9abcc4539a4e90ef32996d77539fc4b3bca7d7bf0ce8804e9"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/InterestRepository.java",
+    "bytes": 957,
+    "sha256": "5b213163ca55b6318feccf44860de9e9ac574b1d732fef4bab1d6a5d8e53449d"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/MessageRepository.java",
+    "bytes": 3093,
+    "sha256": "7ce881bbc5eee5542ac039c6ac6270bafd8850410216058b90c08a446c123138"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/NotificationRepository.java",
+    "bytes": 2887,
+    "sha256": "3c3177ea54214bed17cf43d1cfe5f22bb3864e30f4d2b433c662301e55ffe2a2"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/RandomChatMessageRepository.java",
+    "bytes": 2146,
+    "sha256": "ac14fffca954ddd85a16638184b9c5afb19a9cd1e7a89ff7fce71e62a8060334"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/RandomChatSessionRepository.java",
+    "bytes": 3024,
+    "sha256": "acde664ecbdce6ad62e9b21aca8b9e15ea17b6f331f9f6d1802f55d1355099fa"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/RoomInterestRepository.java",
+    "bytes": 1594,
+    "sha256": "63d36eb83716ca340e8e45654870d507ab8749a1b7dc12d4e10984589af6f854"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/RoomMemberRepository.java",
+    "bytes": 2644,
+    "sha256": "2e62d6f6309052c57a34170077c6b748dc4e3801e2f042d6164f18c0ebf81bb1"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/UserInterestRepository.java",
+    "bytes": 2864,
+    "sha256": "1a384dc485924bf6f1fbc1b70349898876eca1c228bd6449e2fa98d79e212292"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/repository/UserRepository.java",
+    "bytes": 6274,
+    "sha256": "fc59d473575ffda9bfbb6673702a14d4d82731c7e22e56b8d226bd6455cba958"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/AuthService.java",
+    "bytes": 5768,
+    "sha256": "68664384729c81734aede8622b22798caa336facec47c30f36a6bdd07cb7d210"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/ChatMessageService.java",
+    "bytes": 16663,
+    "sha256": "a8770388eb4f05bbfbda8ec890bc3e2071cea391e6eba61c2859fe2f6a7eb141"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/ChatRoomService.java",
+    "bytes": 23471,
+    "sha256": "eee01b85150320e9b8357651672a3505678c686ae9b0a7e020d92f78f1900f96"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/FriendRequestService.java",
+    "bytes": 7759,
+    "sha256": "6ee16e2d7345f1f4aeee3a27175576073d6de2e0d6ace862771db972131b3419"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/FriendshipService.java",
+    "bytes": 3528,
+    "sha256": "b44dab6d2c846cdda6cec4b371788a08ed026dc04b0455be554eec63edfc49fe"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/impl/MatchingServiceImpl.java",
+    "bytes": 6645,
+    "sha256": "6ea0d0118119888b6ddd49654171943ad07f1a980dfdf96ff20549d151ecd594"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/InterestService.java",
+    "bytes": 1494,
+    "sha256": "7e3ee40e02bc5d7685f63c647264fe584c4558909aea6e54b7f2b0c01aa9d51a"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/MatchingService.java",
+    "bytes": 1181,
+    "sha256": "e66445eed7b9f8c66184c40d1b11089310500776bebfec3fb6b7937c89964702"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/NotificationService.java",
+    "bytes": 7419,
+    "sha256": "79e32fc98253302e93543fe3e07a019983455019a23c9b40c7eedc74dc4f0fa1"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/ProfileSummaryService.java",
+    "bytes": 1748,
+    "sha256": "bfd4653a1f06175e1b87366f24d0d6be5c44b1c7c216fbd051348dd522e5b104"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/RoomMembershipService.java",
+    "bytes": 736,
+    "sha256": "f019776f4575eea26a6a367d10bfd2c63da51be853cea6536459d6beeefeff75"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/RoomRealtimeService.java",
+    "bytes": 3747,
+    "sha256": "a18c19d84b3da78e08f75772bd429d44b3f770b207473a4e7b4c879d54a39641"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/strategy/AbstractMessageContentStrategy.java",
+    "bytes": 1842,
+    "sha256": "28375f96c04563a87a4e23cca21525ff9674bc90a57f2ca2061e17df05c10864"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/strategy/FileContentStrategy.java",
+    "bytes": 903,
+    "sha256": "d8657ec09e0b0469904edafe19e0e320d73d5a4629474a5fa0d7d44d7a43e8bf"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/strategy/ImageContentStrategy.java",
+    "bytes": 2552,
+    "sha256": "ea09aaf929bf2cc2dd0f7163082ee9c47bd3a26890c1a007b158bc30572ce48c"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/strategy/MessageContentStrategy.java",
+    "bytes": 771,
+    "sha256": "79badbb61c6d8d87cb5b8dc90941c6c9f9c28bdd38ed8299ba720dbbfc937bfe"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/strategy/MessageContentStrategyResolver.java",
+    "bytes": 1537,
+    "sha256": "cc744853ed1f462ae23280b9846304b4294340fba2673074e096f3e7f8829375"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/strategy/TextContentStrategy.java",
+    "bytes": 865,
+    "sha256": "56de3ed79893d7aa4e7258defe3edd985619ad88ac6e3fac67650f7da688ac75"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/UserDiscoveryService.java",
+    "bytes": 4303,
+    "sha256": "36aeb82a312e597f409009f3e50ae79a996000b361a18e6d3e09370762fed7b8"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/UserInterests.java",
+    "bytes": 309,
+    "sha256": "a3410c996f2889a6c99a577213f5dd31a73f46318bb6523c2a59c16b567f21b3"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/UserInterestService.java",
+    "bytes": 5284,
+    "sha256": "00080f02217b2a3053c6f5cbc523b33504f85135aa8436a07c647a5334757123"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/service/UserService.java",
+    "bytes": 5310,
+    "sha256": "3fcd1ee3c6bdd52a1f7a20d14a959bbae15ccc2007b353e30fed5be7cbffcf34"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/strategy/InterestMatchingStrategy.java",
+    "bytes": 1895,
+    "sha256": "d18a69aabeb31ebc1b4b01a8f97d05fec95565d94abe8e3bf3dc61ead7488ef7"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/strategy/MatchingStrategy.java",
+    "bytes": 818,
+    "sha256": "52123afd255fcc7f52333846927bb1f1918281aa566c08ca999faed86ba1b652"
+  },
+  {
+    "path": "code/src/main/java/com/cp/friend/tools/StorageTool.java",
+    "bytes": 2583,
+    "sha256": "dd8c7f7532074d28540c2206e655be696cd934b181cfbde4b1017c2f493b925e"
+  },
+  {
+    "path": "code/src/main/resources/application-container.properties",
+    "bytes": 588,
+    "sha256": "7d10b47be7306f81b57245a63348330f9ed5190649d5d8ef186962d6fd631f5a"
+  },
+  {
+    "path": "code/src/main/resources/application.properties",
+    "bytes": 588,
+    "sha256": "7d10b47be7306f81b57245a63348330f9ed5190649d5d8ef186962d6fd631f5a"
+  },
+  {
+    "path": "code/src/main/resources/data.sql",
+    "bytes": 1390,
+    "sha256": "3b6bdd431fda2db6ad443a28bfeb6c1fc775b58b1b10bd3c0914a99f9530cbcc"
+  },
+  {
+    "path": "code/src/main/resources/db/upgrade-final.sql",
+    "bytes": 1479,
+    "sha256": "fc7f1ad9ece58285c2d49e7c6c85c74c51ecaa53054ead1bb56890afc9a9b689"
+  },
+  {
+    "path": "code/src/main/resources/schema.sql",
+    "bytes": 7957,
+    "sha256": "2315c80fa14fe5b4cdf172a19e4dfbdaa621e489369d38e3ee6b452ab5a17007"
+  },
+  {
+    "path": "code/src/main/resources/static/css/call-ui.css",
+    "bytes": 4384,
+    "sha256": "b4fc1b9961133dc36c612ffa1ebd49a1d8ec7c19e68b34b21fc46035f6b59a35"
+  },
+  {
+    "path": "code/src/main/resources/static/css/chat-room-ui.css",
+    "bytes": 2875,
+    "sha256": "705ad34534b73474d1e23b93fc2835fbb7cbf2c53fcce50d49815bc0c3e5be13"
+  },
+  {
+    "path": "code/src/main/resources/static/css/discovery-gallery.css",
+    "bytes": 2127,
+    "sha256": "57d293fd63d8937110a111d4bc27583d3237cd3ab62fa1d9eddd2837647d6954"
+  },
+  {
+    "path": "code/src/main/resources/static/css/friend-profile-popup.css",
+    "bytes": 5341,
+    "sha256": "2cf7596f96e62d80f404e83321b257ddd0f3efd2a4e7650cbb911787fac5883d"
+  },
+  {
+    "path": "code/src/main/resources/static/css/friend.css",
+    "bytes": 17297,
+    "sha256": "acc8340b24cd28d252f925fd7504155dead280821ec99fe839d1a6b4e0fc368b"
+  },
+  {
+    "path": "code/src/main/resources/static/css/global-call.css",
+    "bytes": 1050,
+    "sha256": "c3c3bc2572dea2431f8a548df15346027d366c0a4db4a981934f974793f8bbe2"
+  },
+  {
+    "path": "code/src/main/resources/static/css/home.css",
+    "bytes": 10444,
+    "sha256": "7accf8dc75d773773ce817668632be275a5405cb29f30a3e3ae7b2e0f3babb3b"
+  },
+  {
+    "path": "code/src/main/resources/static/css/layout.css",
+    "bytes": 973,
+    "sha256": "9f65f95ebdabb67d559f68127432cdd0b3574be1d2d25264faa0d6b24cf7032a"
+  },
+  {
+    "path": "code/src/main/resources/static/css/login.css",
+    "bytes": 3131,
+    "sha256": "12c8af2f426d523bf447eecdce16433a74e488d6101cdb027b6a2485c25ca5f1"
+  },
+  {
+    "path": "code/src/main/resources/static/css/notification.css",
+    "bytes": 4289,
+    "sha256": "362bcb90acb46937077cf322c13300828edb0b9a70d7de007f0c3f10f0f76d9f"
+  },
+  {
+    "path": "code/src/main/resources/static/css/profile-popup.css",
+    "bytes": 6935,
+    "sha256": "1c9b769d6f4efdd7eeb2aabead7ec32b67c6b8a8e1c5a4db51db5d9c0f7bd620"
+  },
+  {
+    "path": "code/src/main/resources/static/css/random.css",
+    "bytes": 8097,
+    "sha256": "141252cda0740e73e093dc7d01a9bc91ba2a247b8d349b449008bacf6fe45bac"
+  },
+  {
+    "path": "code/src/main/resources/static/css/register.css",
+    "bytes": 5988,
+    "sha256": "39cf962587ef946cca8a4bac64ae84bf9161c531c560b0c9c2f2cfef3982ca1c"
+  },
+  {
+    "path": "code/src/main/resources/static/css/room-modern.css",
+    "bytes": 5634,
+    "sha256": "6b0988cc69c767f4ec5e572c6b36f7c0c1a09dfc89530f111b0a8677e0f9157f"
+  },
+  {
+    "path": "code/src/main/resources/static/css/room.css",
+    "bytes": 4940,
+    "sha256": "4896e9dc8d5d03d767f1c64d1eb4c9cced9eac657065da11bc1815d79bb97d0b"
+  },
+  {
+    "path": "code/src/main/resources/static/css/setting.css",
+    "bytes": 6686,
+    "sha256": "f57dcc9d738b60e6419cf04cd1da0bade08c8b121236d5df857f7a2707763f91"
+  },
+  {
+    "path": "code/src/main/resources/static/css/sidebar.css",
+    "bytes": 5920,
+    "sha256": "e28626790bbc8bf0bf40e3c19eec4770660644e6e775a2fe0e46b2c919760359"
+  },
+  {
+    "path": "code/src/main/resources/static/css/theme.css",
+    "bytes": 1657,
+    "sha256": "657a0618f684d7cb7ae6c6b13f95bc599716fb92ef231fd9b6e125bf846ede8b"
+  },
+  {
+    "path": "code/src/main/resources/static/css/ui-refresh.css",
+    "bytes": 8195,
+    "sha256": "c09bcb6b0721202ffc3fd8a1a8106a661cb9a07a524ab5e9aa798da6cce80f23"
+  },
+  {
+    "path": "code/src/main/resources/static/css/video-call.css",
+    "bytes": 5559,
+    "sha256": "773c18fa9c6113671d3794b766c5bf5dd0815df19085b096f6c952ee299102ab"
+  },
+  {
+    "path": "code/src/main/resources/static/images/arrow-down-sign-to-navigate.png",
+    "bytes": 2639,
+    "sha256": "3b00916b99cf9d2496efde934b5d8819fa38549140411c22cfd571f670845b24"
+  },
+  {
+    "path": "code/src/main/resources/static/images/avatar-placeholder.svg",
+    "bytes": 221,
+    "sha256": "9cb5cdcf515c0b3930c20eed558aa38362ab303281cc0de21ac5ad95de4722bf"
+  },
+  {
+    "path": "code/src/main/resources/static/images/cam-recorder.png",
+    "bytes": 5150,
+    "sha256": "bdb09cf2598c0a2644050e5650f3847747f876b531755e76fd109fbd51da87ec"
+  },
+  {
+    "path": "code/src/main/resources/static/images/dots.png",
+    "bytes": 5588,
+    "sha256": "51c8d982223424f21ced81313e5762ba68c05bbe5981d32ae59d3938a97b2d86"
+  },
+  {
+    "path": "code/src/main/resources/static/images/email.png",
+    "bytes": 10763,
+    "sha256": "b2487ee74b76c9fb6c324e6ab29785024688b835ab5e8f447db3d81e90202639"
+  },
+  {
+    "path": "code/src/main/resources/static/images/Full_logo.png",
+    "bytes": 394641,
+    "sha256": "ce6b01952a0e6254162d92038fb5bd207f5b159a77588d788842d7c6b9e477cc"
+  },
+  {
+    "path": "code/src/main/resources/static/images/image.png",
+    "bytes": 9792,
+    "sha256": "b4d8cec79914713173aef67d5d6fb9c171e227f66cea45e15db307119247ee11"
+  },
+  {
+    "path": "code/src/main/resources/static/images/login.jpg",
+    "bytes": 56309,
+    "sha256": "a9a0ce3fa5e77b9d19f65323001b3d3cc6d2b0805a93183b7903d37df5dfffe3"
+  },
+  {
+    "path": "code/src/main/resources/static/images/man.jpg",
+    "bytes": 26264,
+    "sha256": "cd7b9c8d01de85fb656fba6e284557cf466d07cc496e674271b1319bd1a0c027"
+  },
+  {
+    "path": "code/src/main/resources/static/images/man2.jpg",
+    "bytes": 24876,
+    "sha256": "29b6d8b48e633b0519d2f702f138ae502e23d47ea09ad890258bdf9b5d33d558"
+  },
+  {
+    "path": "code/src/main/resources/static/images/microphone-black-shape.png",
+    "bytes": 7056,
+    "sha256": "a83e67f839091fd850d6ac899a2e28ed74acc7dd7a24f26091a1f59b25da3860"
+  },
+  {
+    "path": "code/src/main/resources/static/images/Napha.jpg",
+    "bytes": 17991,
+    "sha256": "7922ea686dbb71406197d1383165eb3f370de142f2970c4e9a5ea87eb05b1cf7"
+  },
+  {
+    "path": "code/src/main/resources/static/images/padlock.png",
+    "bytes": 8813,
+    "sha256": "2be24decda47bc0c1bff9c3508c60eb2f12a6c3562afb135fbe5fb71d1ffb965"
+  },
+  {
+    "path": "code/src/main/resources/static/images/phone-call copy.png",
+    "bytes": 14761,
+    "sha256": "44af0d06bd2f36ceda8441a66c881cca1423376f53172586de7e9adbb6b9e62f"
+  },
+  {
+    "path": "code/src/main/resources/static/images/phone-call.png",
+    "bytes": 11467,
+    "sha256": "d8482a29cd7feebeb6dda749c8b8a4b03d0abd0f04fa8637403500ce0d9725cc"
+  },
+  {
+    "path": "code/src/main/resources/static/images/Short_logo.png",
+    "bytes": 182240,
+    "sha256": "c175aa666be874028313ddcf18d3a68fcaef23a76bb84f4c56742df9100d92c8"
+  },
+  {
+    "path": "code/src/main/resources/static/images/volume-up.png",
+    "bytes": 10738,
+    "sha256": "067494cfa0bd867d67579ff3170f873f259078dee138c624b4e69ba393c8fca8"
+  },
+  {
+    "path": "code/src/main/resources/static/images/Worawut.jpg",
+    "bytes": 29406,
+    "sha256": "ea0575c41b4273d3d306ea3b262c85675516fb7c625d2a659ae34cf7403e7ebe"
+  },
+  {
+    "path": "code/src/main/resources/static/js/call.js",
+    "bytes": 24933,
+    "sha256": "e11dbcb3c027e6af9909526625e2243b8c9cf22cf4303fe879a2aaf2a7035860"
+  },
+  {
+    "path": "code/src/main/resources/static/js/chat-images.js",
+    "bytes": 1579,
+    "sha256": "a8c38ccf49c5ee8c586f30b9227339b82a8b52b2a1ae8eb987bd0a592f55a73f"
+  },
+  {
+    "path": "code/src/main/resources/static/js/friend-profile-popup.js",
+    "bytes": 4709,
+    "sha256": "22ee3994786c31cc61475e4ce4fc5e97fb31217e36631dac199e0cf53f5e500b"
+  },
+  {
+    "path": "code/src/main/resources/static/js/friend.js",
+    "bytes": 44354,
+    "sha256": "1a0fc370f5c88e6221224a7904eb40e107349fc8defa46e7575325315c8b7bd4"
+  },
+  {
+    "path": "code/src/main/resources/static/js/global-call.js",
+    "bytes": 3439,
+    "sha256": "12c9cdec70bf133975e743a8b3ed61f2d70a74c95171e080bce175620a824864"
+  },
+  {
+    "path": "code/src/main/resources/static/js/home.js",
+    "bytes": 24317,
+    "sha256": "8ea7da7ad181fc419054047d9ec1bf031f15b2821b72f9c334f95444710a6803"
+  },
+  {
+    "path": "code/src/main/resources/static/js/login.js",
+    "bytes": 4927,
+    "sha256": "58f762359fa3f4848d7688fa2e3ec3bb3891a68f93dd402417abaf0164696cad"
+  },
+  {
+    "path": "code/src/main/resources/static/js/notification.js",
+    "bytes": 19544,
+    "sha256": "da7f86c70589a3f96d60c1ffe896ec97551c42eca48bd20b4da5ae7504db8fae"
+  },
+  {
+    "path": "code/src/main/resources/static/js/profile-popup.js",
+    "bytes": 9496,
+    "sha256": "4d1c2e0739a60e9dff1396d5fdb0d3fa414ee078ebf7fe7f23a4e114e91460b2"
+  },
+  {
+    "path": "code/src/main/resources/static/js/random.js",
+    "bytes": 7427,
+    "sha256": "cb50990aad817f0da5b166b7a73557323df0e0c277933598194c5b5c03028141"
+  },
+  {
+    "path": "code/src/main/resources/static/js/register.js",
+    "bytes": 9051,
+    "sha256": "bd324ed12db159ee4405d2552200cdfc5e48fed9bfe9c08c980f0cd992466d2a"
+  },
+  {
+    "path": "code/src/main/resources/static/js/room-call.js",
+    "bytes": 10407,
+    "sha256": "e5ef0590c06bdbd93ce0a37ab78f8294e5b8103a6102320c3052a22c3c5e63ee"
+  },
+  {
+    "path": "code/src/main/resources/static/js/room-live.js",
+    "bytes": 1862,
+    "sha256": "5afc68e314567e7c2a4313c5c3fdf465411dde880300c85e6102b731b1c06b43"
+  },
+  {
+    "path": "code/src/main/resources/static/js/room.js",
+    "bytes": 15942,
+    "sha256": "80dfb3797a3c6e64cb2d4716e86889d76896ed3cd57d5f708ea20b53d67d7883"
+  },
+  {
+    "path": "code/src/main/resources/static/js/setting.js",
+    "bytes": 2648,
+    "sha256": "3d43b2e15fc4650c15db202156ad21c25b3965da6b7eb260a0f207dbeff45786"
+  },
+  {
+    "path": "code/src/main/resources/static/js/sidebar.js",
+    "bytes": 2496,
+    "sha256": "3aad1433615e501b5e8b5bd91486c59435b6031355a7a9512828ae23fb4217c7"
+  },
+  {
+    "path": "code/src/main/resources/static/js/theme.js",
+    "bytes": 559,
+    "sha256": "85af4bfafb2b5a5c5d4f926dc949419187c5e585e7ed2fde131cd6c501796ff0"
+  },
+  {
+    "path": "code/src/main/resources/templates/fragments/friend-profile-popup.html",
+    "bytes": 2163,
+    "sha256": "e97b1ee77ef2d10849905d948d5b2e207e89134af1bf754c3f630ca7c31fb367"
+  },
+  {
+    "path": "code/src/main/resources/templates/fragments/global-call.html",
+    "bytes": 1132,
+    "sha256": "43755c8cdfb99cc6a820b21087ca7904efba89b0fd8b16e39348589d323f1b73"
+  },
+  {
+    "path": "code/src/main/resources/templates/fragments/profile-editor.html",
+    "bytes": 4100,
+    "sha256": "f942bb859b42edf8b57a440fa2110f87b2c645ac014de2bf53ffac622ce75e5b"
+  },
+  {
+    "path": "code/src/main/resources/templates/fragments/sidebar.html",
+    "bytes": 3048,
+    "sha256": "a5f4c6f5d91e3c1293ef22262fe6d9c42fff0030cfc2430a52ae04a8e54a692d"
+  },
+  {
+    "path": "code/src/main/resources/templates/friend.html",
+    "bytes": 13118,
+    "sha256": "6561b0bf66fba713ac9873c4119dec49be749527002df998a44c3eab7ff82710"
+  },
+  {
+    "path": "code/src/main/resources/templates/home.html",
+    "bytes": 8506,
+    "sha256": "07dc2d68dbe72c04f377b1b191739b1c035f322fa75e604e5d93f5a4e543842a"
+  },
+  {
+    "path": "code/src/main/resources/templates/login.html",
+    "bytes": 2512,
+    "sha256": "d4b63900ca5d606c5a911180c2fc86f86a454b997271c51a2fd090b976cf3eb5"
+  },
+  {
+    "path": "code/src/main/resources/templates/notification.html",
+    "bytes": 3604,
+    "sha256": "218c9ad8aa4a99e1a824c1b04f81868fed39a1745e02a536c1250b27ac71907c"
+  },
+  {
+    "path": "code/src/main/resources/templates/random.html",
+    "bytes": 4765,
+    "sha256": "53dbed028cebc6328de74b0cab01eb7575001e528c730e5b917f418068b89982"
+  },
+  {
+    "path": "code/src/main/resources/templates/register.html",
+    "bytes": 10098,
+    "sha256": "f747781e9cdadae0fbdbafb28dbb0ce3672e53f0dfdaf2d166112bb512baa907"
+  },
+  {
+    "path": "code/src/main/resources/templates/room.html",
+    "bytes": 5867,
+    "sha256": "4acc7cb32190294bd2081afa375062451b30061cac212b9beec8d7111c27454e"
+  },
+  {
+    "path": "code/src/main/resources/templates/setting.html",
+    "bytes": 8452,
+    "sha256": "52a40256e4d74bd66a5559a9be58f3190e9e4c6d8ffc0cafe21a7f0d424f2614"
+  },
+  {
+    "path": "code/start-sharing.ps1",
+    "bytes": 2754,
+    "sha256": "71a8139cb2a7216300f182bd7bc4b66a285abab4fac6b680f90b08fd9b5bf57d"
+  },
+  {
+    "path": "code/turn-check.html",
+    "bytes": 5039,
+    "sha256": "541083d6989231af7b6cb80c36d2ac4e71cbee3033b881325c2f9248e209ab35"
+  },
+  {
+    "path": "code/turn-config.js",
+    "bytes": 1791,
+    "sha256": "18d5348fc9c7b3e5c9f608be8cd3918fe37e82f7b20873c161acf106f98c9472"
+  },
+  {
+    "path": "doc/api-contract.md",
+    "bytes": 2010,
+    "sha256": "d7eef3513cdd389b4bc9315c64f397e5adcc01cc6177e789126ec7908d01a063"
+  },
+  {
+    "path": "doc/data-dictionary.md",
+    "bytes": 9769,
+    "sha256": "98452671a9bf6c39394c6aaf20b8c92b9fe80f898c6dc1104100b87c49ec9beb"
+  },
+  {
+    "path": "doc/database.md",
+    "bytes": 2540,
+    "sha256": "01c69f844f93e8bce7940613ac6c850598cfb30f604f4a4f36e1790b6b179d1d"
+  },
+  {
+    "path": "doc/deployment.md",
+    "bytes": 2285,
+    "sha256": "e69205f439d72238ed54b5b44da5af07ebe53f1458b3aa9ebe5d79b7c27f09b2"
+  },
+  {
+    "path": "doc/design-patterns.md",
+    "bytes": 1975,
+    "sha256": "5888c33bb574b2381d0a098ddd5f5ee6e388b1e80feed23b7945904512bb6ba9"
+  },
+  {
+    "path": "doc/diagrams/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "doc/diagrams/activity-room.mmd",
+    "bytes": 620,
+    "sha256": "675569d02566fcc043c229117f4bf81ddc56754131d0a55e1939b3220befd9b5"
+  },
+  {
+    "path": "doc/diagrams/class-patterns.mmd",
+    "bytes": 1182,
+    "sha256": "d16a772a46db49be33a6a56906fb1ab18e5535bbb44379cbb8a34f22ccdb4e60"
+  },
+  {
+    "path": "doc/diagrams/component.mmd",
+    "bytes": 613,
+    "sha256": "2dba54a95e1e6f5b3d21b935b8b8e65e07f2556cf025ff795fae55d04c433061"
+  },
+  {
+    "path": "doc/diagrams/deployment.mmd",
+    "bytes": 513,
+    "sha256": "388853ff55d64f676d7b8a8ad8c629b819a7567aa1ff0d98bad45fe420d1eb41"
+  },
+  {
+    "path": "doc/diagrams/domain-model.mmd",
+    "bytes": 577,
+    "sha256": "9bacb7f7c16763a9a0ee7afc6232a43318b91d472ed6aed61f7e657df022f92f"
+  },
+  {
+    "path": "doc/diagrams/er.mmd",
+    "bytes": 1729,
+    "sha256": "afd367cef29850c5f1c30c6813b8dcf206b6f381fd7f3875cdab914ecdfa95ac"
+  },
+  {
+    "path": "doc/diagrams/README.md",
+    "bytes": 961,
+    "sha256": "0b28f71f254e194ae09c9f48887c56fd23692a6f7fdd666ba9d926eb192cc307"
+  },
+  {
+    "path": "doc/diagrams/sequence-chat-call.mmd",
+    "bytes": 775,
+    "sha256": "9feee9bf7479ce305f32aec62ebc7855d13f0f19716738593186fe98c85d6c4f"
+  },
+  {
+    "path": "doc/diagrams/sequence-friend-request.mmd",
+    "bytes": 760,
+    "sha256": "1a0e6589fe18ddf3f429045a12cacf85278de866c996b21f0e9e972bca6a5094"
+  },
+  {
+    "path": "doc/diagrams/sequence-login.mmd",
+    "bytes": 624,
+    "sha256": "ad36886d143babea95284fccd7aad1105083783705cb32322d16771a9267117c"
+  },
+  {
+    "path": "doc/diagrams/state.mmd",
+    "bytes": 551,
+    "sha256": "e79d7035e5e6c2b1fde0f5f31a2250dd43bc47015f1ce8c13897f0131259e6b5"
+  },
+  {
+    "path": "doc/diagrams/use-case-descriptions.md",
+    "bytes": 2651,
+    "sha256": "67d78bce570ab98585cbda5f22451c3aabad8fd540e69c0f85ac5091a1fa68e2"
+  },
+  {
+    "path": "doc/diagrams/use-case.puml",
+    "bytes": 823,
+    "sha256": "ea7ed9d6865b86e74ab0d13a5c41be1b88e820a6df190f6913c4fec27817bd79"
+  },
+  {
+    "path": "doc/history/api-test-report.md",
+    "bytes": 11183,
+    "sha256": "caf722e1eb3c5410c386bfe1241cb724549406407c8602e72ef3412464bc9f9b"
+  },
+  {
+    "path": "doc/history/before-final-fixes-assignment-audit.md",
+    "bytes": 14533,
+    "sha256": "2e24d4bce0f6b4c1fb4bd1f04d0793a00a9c5060bed33cf1a1c177a2f6c03a6b"
+  },
+  {
+    "path": "doc/history/before-final-fixes-java-test-summary.json",
+    "bytes": 39245,
+    "sha256": "6a42c8aee3577296dcd9f8619615cc09c731571ff352c4da708d4a2a65e4467d"
+  },
+  {
+    "path": "doc/history/chat-consistency-and-team-flow.md",
+    "bytes": 4188,
+    "sha256": "50d4fedc997a235fa314e324d53766b97230781bc86706fdd6766238fc572220"
+  },
+  {
+    "path": "doc/history/chat-room-discovery-fixes.md",
+    "bytes": 5861,
+    "sha256": "43fa00ff192161e8412ec2b8a1e31ea762eadb113fdd3b63742702093f8e5c44"
+  },
+  {
+    "path": "doc/history/cloudflare-turn-setup.md",
+    "bytes": 3246,
+    "sha256": "6d5b12c304013b98f0ede14fcf5ff386e74d26b6fc3c4825829e470fab6b077f"
+  },
+  {
+    "path": "doc/history/friend-call-fixes.md",
+    "bytes": 3834,
+    "sha256": "9dd32027140fb151d70813195aec58540fdd14b932246006f47bdb97274cbf95"
+  },
+  {
+    "path": "doc/history/friend-room-fixes.md",
+    "bytes": 2295,
+    "sha256": "44765d4c46b70bb7de5bb7d4367f155ac6c34939697cb5738518210b98777ba5"
+  },
+  {
+    "path": "doc/history/frontend-refresh.md",
+    "bytes": 1997,
+    "sha256": "35b069c38baa11e38e27663dd16030c25f6a24984cfeb99da528627061112411"
+  },
+  {
+    "path": "doc/history/login-recovery-fix.md",
+    "bytes": 1847,
+    "sha256": "a6a74c3494f7acadf8f2e633fb52fec95cb2319d68c48e29c6f595c9dc537ed6"
+  },
+  {
+    "path": "doc/history/original-project-readme.md",
+    "bytes": 1506,
+    "sha256": "96cd809c3759ce98d4ab1cc6a471475e178d29758cdce0d25d49b6bc4acfe0fa"
+  },
+  {
+    "path": "doc/history/profile-gallery-and-test-account-cleanup.md",
+    "bytes": 4497,
+    "sha256": "4686564531a201dc53d638f4e0f60e1d17f6ea268d620a7a7369904edaa7fac3"
+  },
+  {
+    "path": "doc/history/public-setup.md",
+    "bytes": 3534,
+    "sha256": "4286e264d2c7374324dcd9aa28cb4b58f3d6fdf9a90cff6cbedc2f93034c352a"
+  },
+  {
+    "path": "doc/history/room-modern-and-auth-fixes.md",
+    "bytes": 3284,
+    "sha256": "26320e968891bd323f6fd26a6e204f490c6d9fe5e72afbc2728f701ca6b062f9"
+  },
+  {
+    "path": "doc/history/room-realtime-fix.md",
+    "bytes": 3819,
+    "sha256": "9947819ed6936f4dbae06d5408531cfcaaaf5dee05d502fe200c5f7460441b82"
+  },
+  {
+    "path": "doc/history/screen-sharing.md",
+    "bytes": 5379,
+    "sha256": "a972efb4e41a388c467eab7f4a2bd7bb39b256e4b06c6e0d38d9def1e84677ce"
+  },
+  {
+    "path": "doc/history/team-flow-latest.md",
+    "bytes": 14560,
+    "sha256": "0b611f9e13f1afca4d7bdea07791b35135842aa94b9fedb768f2e0daf8ccfbaf"
+  },
+  {
+    "path": "doc/history/turn-setup.md",
+    "bytes": 2347,
+    "sha256": "6fdfe6a4760b6002153d66fedec0337913acd4a150e1af3d80d1a897062e3566"
+  },
+  {
+    "path": "doc/review/api-verification.json",
+    "bytes": 1136,
+    "sha256": "85b1aebec0277ba5b2c22390dd93c81c4b8c2cb7bc395df74232f1588e3fdaf8"
+  },
+  {
+    "path": "doc/review/assignment-audit.md",
+    "bytes": 4796,
+    "sha256": "2e593dc44d7b5f9566b839e73cb368a00ad9995861b408024c11b25d984f2b75"
+  },
+  {
+    "path": "doc/review/chat-verification.json",
+    "bytes": 1092,
+    "sha256": "7b817652ef74520016786dc2112fb275839375e4a3315d8f172becb3f17f75c3"
+  },
+  {
+    "path": "doc/review/final-release.md",
+    "bytes": 4796,
+    "sha256": "2e593dc44d7b5f9566b839e73cb368a00ad9995861b408024c11b25d984f2b75"
+  },
+  {
+    "path": "doc/review/handoff.md",
+    "bytes": 3951,
+    "sha256": "35d01769c63fe90e7c98dcd9f52da50e41660e6bd850fc91718ea8ff8237efd7"
+  },
+  {
+    "path": "doc/review/java-test-summary.json",
+    "bytes": 42410,
+    "sha256": "a7021399943e2905df2e7ce96505198296152a1882df60f7b8e2d09b62526fe4"
+  },
+  {
+    "path": "doc/review/login-verification.json",
+    "bytes": 612,
+    "sha256": "f1a12ad848365b17a78b99ee1aa3fccf772dc00118ec2d12e58fec43cc2e4309"
+  },
+  {
+    "path": "doc/review/package-verification.json",
+    "bytes": 1043,
+    "sha256": "98791afdc08949787d2017e2858318e4d7c944788cce3dde1395f56023c0d530"
+  },
+  {
+    "path": "doc/review/realtime-verification.json",
+    "bytes": 811,
+    "sha256": "05cfb1168bec3c2ce7e7377c52d8857613b1c8358f2279c750bf260ec0376239"
+  },
+  {
+    "path": "doc/review/robot-test-summary.json",
+    "bytes": 1155,
+    "sha256": "50a705d761fe5868c4fa0247889636195288b5d9ee2022cea9c848e511c47af1"
+  },
+  {
+    "path": "doc/slide/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "doc/slide/presentation-outline.md",
+    "bytes": 1608,
+    "sha256": "ebbc1b40f05b783f63f09afa654694cf1703f45e55b2a067993bf361ba67d169"
+  },
+  {
+    "path": "doc/solid-analysis.md",
+    "bytes": 2499,
+    "sha256": "62e175fd7a8be6ce190544f6a646eb516f604a945db14a05eab8a56824fb838b"
+  },
+  {
+    "path": "docker-compose.yml",
+    "bytes": 2209,
+    "sha256": "8f8200b5ca620fab69b026a1d370d5f6415319b88e161c75866668997928c38a"
+  },
+  {
+    "path": "img/README.md",
+    "bytes": 675,
+    "sha256": "0e7cb8c2d19a4441a18e26bf92f29d455250c24160478906e1c972d4b8e9afac"
+  },
+  {
+    "path": "img/ui-verification/discovery-mobile.png",
+    "bytes": 79842,
+    "sha256": "4a0006df5ffe0f263c09d9e2d589aae7720b779bfb5e5bf461933d9af1a296d3"
+  },
+  {
+    "path": "img/ui-verification/profile-desktop.png",
+    "bytes": 68131,
+    "sha256": "4d24fb76fc9c8ed42440e6fe24fc5f33e6d3204b465a032950671c58028f104d"
+  },
+  {
+    "path": "img/ui-verification/profile-mobile.png",
+    "bytes": 77141,
+    "sha256": "156a4c190b547db3bd7abd64bfe5a9f3cd4f3c4f70fd0055f292099fc9026393"
+  },
+  {
+    "path": "README.md",
+    "bytes": 11823,
+    "sha256": "1650296dd20e7ea44eb76960301b1a516a5928d91eee61ff2e5daae8bfb50c46"
+  },
+  {
+    "path": "test/browser/api-isolated.py",
+    "bytes": 5791,
+    "sha256": "fe167d49667dd56391083d99a0c13ff2269a045a83991daa18ee0027226993e4"
+  },
+  {
+    "path": "test/browser/auth-browser.cjs",
+    "bytes": 3838,
+    "sha256": "599c210d8231c03f16b9f5990adbcecf1f0d36b3e77fcd8731fc84c1966fbc53"
+  },
+  {
+    "path": "test/browser/chat-browser.cjs",
+    "bytes": 8482,
+    "sha256": "1338b93bdc63771334ccf087db3699dee6c50f8974997205568ed5edf6eb3c3c"
+  },
+  {
+    "path": "test/browser/package.json",
+    "bytes": 165,
+    "sha256": "8bbf8996b0daf16db5750b2a41437e94cb14b7c53edfce811c28905aa0dc4b0d"
+  },
+  {
+    "path": "test/browser/README.md",
+    "bytes": 1410,
+    "sha256": "22161d3419e7fc582f112fc99e1d18da4d334d070e141f593bf35256d97d6c99"
+  },
+  {
+    "path": "test/browser/realtime-isolated.cjs",
+    "bytes": 6288,
+    "sha256": "ef572afad82703714477112ea8cf68ffec79f786dc0bbcbdf08517566d0dc5e1"
+  },
+  {
+    "path": "test/e2e/robot/resources/common.resource",
+    "bytes": 378,
+    "sha256": "4e484a4781b6f9ef8700ebf63ae260bc28ac139b8b216569cfa687b57d723f6e"
+  },
+  {
+    "path": "test/e2e/robot/tests/auth_flow.robot",
+    "bytes": 1654,
+    "sha256": "19a3f34d9342bd59e75c0e353d4ac222f99188c1862dd946b2b16ace00b77294"
+  },
+  {
+    "path": "test/e2e/robot/tests/login_smoke.robot",
+    "bytes": 975,
+    "sha256": "32961a3b4665f4b729ca0cb4604013a250659132d4a10c97b5eaf977a83ccfcf"
+  },
+  {
+    "path": "test/e2e/robot/tests/register_interest.robot",
+    "bytes": 1806,
+    "sha256": "47b9b3d4ed4c2d77aa1e02aa6d0a6da24a2b56a08a29a8744408c0b874f9ae57"
+  },
+  {
+    "path": "test/evidence/README.md",
+    "bytes": 1227,
+    "sha256": "337f16de48b23fd065f3b7e8d2885daaa98cb8be82cb1dc71859848a66fc6f62"
+  },
+  {
+    "path": "test/evidence/robot-final-results/log.html",
+    "bytes": 254921,
+    "sha256": "91f8a77cad2d7b4d878f4170bf73522ddf65c7b02d7e043203a55c9c2930bfcc"
+  },
+  {
+    "path": "test/evidence/robot-final-results/output.xml",
+    "bytes": 39761,
+    "sha256": "4f0b2dd12b2eaf5036c114d3d914e61caf21d9a0f4a4198a568e5b78f79ad491"
+  },
+  {
+    "path": "test/evidence/robot-final-results/report.html",
+    "bytes": 249905,
+    "sha256": "af1805b5a20e952f8c138fd00d2da5126f33ac76cec2effde9e479f48ed218d1"
+  },
+  {
+    "path": "test/evidence/robot-isolated-results/log.html",
+    "bytes": 254189,
+    "sha256": "b3f7fc2219a397965d747fa90fae1fe4252be194bb14e23b1bc841646c0682a2"
+  },
+  {
+    "path": "test/evidence/robot-isolated-results/output.xml",
+    "bytes": 38569,
+    "sha256": "1fd373ac54f3a5b508863892ffb79fe6cc9f06115d9d488b983e6982b1e7d5f0"
+  },
+  {
+    "path": "test/evidence/robot-isolated-results/report.html",
+    "bytes": 250324,
+    "sha256": "c34a446679ae27c9dcf5b057a3ffd32d22068b0b50c6d92e47fb55c0b94bdd79"
+  },
+  {
+    "path": "test/evidence/robot-isolated-retest/log.html",
+    "bytes": 254778,
+    "sha256": "1227cdbec9a7fbc592ae2faa6d86de2230754b678eb1ee7a1c60cf67274df25e"
+  },
+  {
+    "path": "test/evidence/robot-isolated-retest/output.xml",
+    "bytes": 39774,
+    "sha256": "93e7475fcefdcab36a0f24daad3e747b1a010a4a812257784603da7b689f0850"
+  },
+  {
+    "path": "test/evidence/robot-isolated-retest/report.html",
+    "bytes": 249912,
+    "sha256": "371a4d877c09bf64ea4872a3a39a499ec4efa0d5f63690d3ed5a5f98731f4bc2"
+  },
+  {
+    "path": "test/evidence/robot-release-results/log.html",
+    "bytes": 254717,
+    "sha256": "40e94dceda1c9d10bb0426f1c2aad3f11d6c98ef728e4ac516cdf4989ac75c87"
+  },
+  {
+    "path": "test/evidence/robot-release-results/output.xml",
+    "bytes": 39774,
+    "sha256": "f271b29742bd50ebd7a992dd8ca81e042ba2939f5017f2202fd381531b862df9"
+  },
+  {
+    "path": "test/evidence/robot-release-results/report.html",
+    "bytes": 249910,
+    "sha256": "7fc98c6d8a154f382bb9bfced0a6dc46b2db3408adf27386cbd092b3cfc307bf"
+  },
+  {
+    "path": "test/java/com/cp/friend/config/AuthSecurityWebMvcTest.java",
+    "bytes": 6137,
+    "sha256": "b4e0f0f7b2623fb604acc3458145295710ed045bfe606fa75742f42481314012"
+  },
+  {
+    "path": "test/java/com/cp/friend/config/SessionHandshakeInterceptorTest.java",
+    "bytes": 1186,
+    "sha256": "9e700fd44dbcd16234c64e0b9af7725e958284161bf5d067ec17dda8c1fd93a3"
+  },
+  {
+    "path": "test/java/com/cp/friend/config/WebSocketAuthChannelInterceptorTest.java",
+    "bytes": 4454,
+    "sha256": "7d75214db525f0f5d5ca3150f54780847e73903d3aa3cf6929f1c0f5c9c610d2"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/AuthControllerMvcTest.java",
+    "bytes": 10873,
+    "sha256": "06ec89d7bc00a255e7dab63d55c9b2a8c104d7b3f0eebae423a9cf3b2a4ff1a9"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/ChatMessageControllerMvcTest.java",
+    "bytes": 7608,
+    "sha256": "b93037035dd6b01d95a82696bf9429a737fb1992b76f92203a2ab734901d385e"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/ChatRoomControllerMvcTest.java",
+    "bytes": 4731,
+    "sha256": "7d5d51271b4bd902a5cd94c09e7aa4097ad675b4bccde9bf9a5b8de340251060"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/FriendRequestControllerMvcTest.java",
+    "bytes": 6092,
+    "sha256": "40d7c0afba80088a406dca5afc94dd41cf53788aedd7d0af93aa93832908760c"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/FriendshipControllerMvcTest.java",
+    "bytes": 3738,
+    "sha256": "155685257fae080bc074407115abde8f204a0ec6ace18d53bbfa9394a120a10d"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/InterestControllerMvcTest.java",
+    "bytes": 8739,
+    "sha256": "a32eaeeb6d7287731d4b8cb12ed80e86eb26f3b9baaec875e30ccf06a1b5a1e7"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/NotificationControllerMvcTest.java",
+    "bytes": 3944,
+    "sha256": "49d2b3608f0bda0311494f18ce8130aa5651a8838a0b34370f24f81425a5b03a"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/PageControllerMvcTest.java",
+    "bytes": 1484,
+    "sha256": "411bfa7d4f1e72353bb7978d58c435db5dc55011934c17433b8d00952d68a09d"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/ProfileSummaryControllerTest.java",
+    "bytes": 2853,
+    "sha256": "52f549ffa589f25d1fb4cb628e22a85c8ab6d2ba43587f3c8e244314ab4f565c"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/UserControllerMvcTest.java",
+    "bytes": 5335,
+    "sha256": "0e65b29619e86907d177d5b0e54b8037f67408c75aa5fa598c4feeef4c36620e"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/UserDiscoveryControllerMvcTest.java",
+    "bytes": 3827,
+    "sha256": "cb07def9025ddd742918306fee25cb8be0b4040787b962c9bb598881d2115391"
+  },
+  {
+    "path": "test/java/com/cp/friend/controller/UserInterestControllerMvcTest.java",
+    "bytes": 10410,
+    "sha256": "d5c5842770b83f7f969a64d4767f45bd3d10833ac4fb80b1b774836fc2860a15"
+  },
+  {
+    "path": "test/java/com/cp/friend/FriendApplicationTests.java",
+    "bytes": 755,
+    "sha256": "a59b8e855689cf75c33385af82cb76769be55da4b2ed69ac70934c4ce4e5e846"
+  },
+  {
+    "path": "test/java/com/cp/friend/frontend/CallFrontendContractTest.java",
+    "bytes": 5829,
+    "sha256": "e1717928a62f44dfe65a58b144993bd9004305a0aabb9445a9b5e713d5362906"
+  },
+  {
+    "path": "test/java/com/cp/friend/frontend/FrontendAuthContractTest.java",
+    "bytes": 3416,
+    "sha256": "9e42ff5f6bc168ccc6fd19d43db484139875ad686db78be9d3ea78bd2cc82f83"
+  },
+  {
+    "path": "test/java/com/cp/friend/integration/FriendNotificationChatContractTest.java",
+    "bytes": 5536,
+    "sha256": "31f161e2bea6b4329a0cadb09e48b670a159cd6980f8c637a2882df53f3c22b4"
+  },
+  {
+    "path": "test/java/com/cp/friend/schema/ProfilePersistenceTest.java",
+    "bytes": 1147,
+    "sha256": "db5b4a6a61cacc7ba819f1e0f5dc369e5a699157c16b6ba01a612938ef0588be"
+  },
+  {
+    "path": "test/java/com/cp/friend/schema/SchemaExportTest.java",
+    "bytes": 1692,
+    "sha256": "40ffaf93ffe6dffa6babd7d6195036818a533464bccad1ff93949bdd942d8a7a"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/AuthServiceLoginTest.java",
+    "bytes": 7905,
+    "sha256": "2f2c2ce5e15cc0cd21695dc7fa2086fb04f3618e67fbe9de9d8c3c1206e47c50"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/AuthServiceRegisterTest.java",
+    "bytes": 9593,
+    "sha256": "6c56f955dedd84301d0a589bcfb51a36d066676bc4e4aaee983de7dae8b3e392"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/ChatMessageServiceTest.java",
+    "bytes": 28401,
+    "sha256": "f173671b00f6bfc4fa7fd5ca57d0138e4b168515a68054d583f45c1da7c11d07"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/ChatRoomServiceTest.java",
+    "bytes": 26819,
+    "sha256": "c945a74d07d7346b925699919b057cdcfbecdfddc395d7d668300cadffb2b085"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/FriendRequestServiceTest.java",
+    "bytes": 21818,
+    "sha256": "c743ea62feae11b970ed47aa0a74aa443ae3c5d56a89bf1c418bc561df08dc08"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/FriendshipServiceTest.java",
+    "bytes": 7608,
+    "sha256": "50efad1e9b2d1210b70ce6249bfbc246cf97c36d8277197a1a877836a73e6e67"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/ImageContentStrategyTest.java",
+    "bytes": 1339,
+    "sha256": "0f7394449ac9ac204cb3606b523270f50f6431154c111be2508e80846ffcf28a"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/InterestServiceTest.java",
+    "bytes": 3933,
+    "sha256": "dac235c48da5dfa42ee83ef1d47a94fe4eca16019616776caa803802f8309c87"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/MatchingServiceTest.java",
+    "bytes": 7840,
+    "sha256": "a5357f84fb854ea7e919a6f6dab8b4de00aa2316a360e6f4254f284df76c3866"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/NotificationServiceTest.java",
+    "bytes": 11659,
+    "sha256": "221392ff76fa69e0df73c1735cc79511fca274f9252c2f416f70e35e39a38967"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/ProfileGalleryTest.java",
+    "bytes": 3786,
+    "sha256": "ae22401aa012a47fdf6358fcfe3eae3bf18b375f8f4ccf2239fbcc9b7e7451d9"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/RoomRealtimeServiceTest.java",
+    "bytes": 2458,
+    "sha256": "7f99e7b2b81636408c50e1c3a7db063462e5847a3b1d59bd445cdc009f6e457d"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/UserDiscoveryServiceTest.java",
+    "bytes": 11749,
+    "sha256": "6e9886a1b7ffd47f34273eb96567d345400849162b52b437775855a9575bddac"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/UserInterestServiceTest.java",
+    "bytes": 8973,
+    "sha256": "d786ff7c446280cc880c0d2faebfc1d117e3b83edc006bb4c4b98e15a0d3ea12"
+  },
+  {
+    "path": "test/java/com/cp/friend/service/UserServiceTest.java",
+    "bytes": 5908,
+    "sha256": "c79cf6a4c4ad437efd38476ce511db7122dadaa8a633381ef7da806385160710"
+  },
+  {
+    "path": "test/java/com/cp/friend/strategy/InterestMatchingStrategyTest.java",
+    "bytes": 2782,
+    "sha256": "7cdf4245e75559ee9cba257446fa14a94653a4ca269bc06094fa87243ebe86c3"
+  },
+  {
+    "path": "test/README.md",
+    "bytes": 1049,
+    "sha256": "d3e5244142ba29540df13bb07a26e1325a6eca2e6279feaa7d58d41d1891bd44"
+  },
+  {
+    "path": "test/requirements-robot.txt",
+    "bytes": 53,
+    "sha256": "a0020514fb9a42c5203366caf6d229a6620c099586ecefeaee022993a9b4fd34"
+  },
+  {
+    "path": "test/test-cases/CPFriendFinder_TestCases.xlsx",
+    "bytes": 125128,
+    "sha256": "1bb77bab58c3707d04b138e68519e763c64b47da1504d3350aa7cf4c6fb219d0"
+  },
+  {
+    "path": "test/test-plan/test-plan.md",
+    "bytes": 2284,
+    "sha256": "7a416f18662f0608080cbeef4d9319c8949685115bc123fdc2c6b3cfbe3673d9"
+  }
+]

@@ -1,0 +1,58 @@
+erDiagram
+    chat_rooms {
+        UUID id PK
+    }
+    friend_requests {
+        UUID id PK
+    }
+    friendships {
+        UUID id PK
+    }
+    interests {
+        UUID id PK
+    }
+    messages {
+        UUID id PK
+    }
+    notifications {
+        UUID id PK
+    }
+    random_chat_messages {
+        UUID id PK
+    }
+    random_chat_sessions {
+        UUID id PK
+    }
+    room_members {
+        UUID id PK
+    }
+    user_profiles {
+        UUID user_id PK
+    }
+    users {
+        UUID id PK
+    }
+    users ||--o{ chat_rooms : "created_by"
+    users ||--o{ friend_requests : "receiver_id"
+    users ||--o{ friend_requests : "sender_id"
+    users ||--o{ friendships : "friend_id"
+    users ||--o{ friendships : "user_id"
+    chat_rooms ||--o{ messages : "room_id"
+    users ||--o{ messages : "sender_id"
+    users ||--o{ notifications : "actor_user_id"
+    friend_requests ||--o{ notifications : "friend_request_id"
+    chat_rooms ||--o{ notifications : "room_id"
+    users ||--o{ notifications : "user_id"
+    users ||--o{ random_chat_messages : "sender_id"
+    random_chat_sessions ||--o{ random_chat_messages : "session_id"
+    users ||--o{ random_chat_sessions : "ended_by_user_id"
+    users ||--o{ random_chat_sessions : "user1_id"
+    users ||--o{ random_chat_sessions : "user2_id"
+    interests ||--o{ room_interests : "interest_id"
+    chat_rooms ||--o{ room_interests : "room_id"
+    chat_rooms ||--o{ room_members : "room_id"
+    users ||--o{ room_members : "user_id"
+    users ||--o{ user_gallery_photos : "user_id"
+    interests ||--o{ user_interests : "interest_id"
+    users ||--o{ user_interests : "user_id"
+    users ||--o| user_profiles : "user_id"

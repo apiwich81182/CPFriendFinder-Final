@@ -1,0 +1,34 @@
+{
+  "recordedAt": "2026-10-09T17:13:29.823977+00:00",
+  "java": {
+    "tests": 236,
+    "passed": 236,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "robot": {
+    "passed": 5,
+    "failed": 0,
+    "scope": "disposable H2, actual browser"
+  },
+  "browserFixtures": {
+    "auth": 8,
+    "chat": 19
+  },
+  "actualHttpGroupedScenarios": 9,
+  "actualTwoContextStompGroupedScenarios": 9,
+  "composeConfigurationValidated": true,
+  "dockerBuildPerformed": false,
+  "postgresDeploymentValidated": false,
+  "physicalCrossNetworkMediaValidated": false,
+  "originalSourceUpdated": true,
+  "sourceAndTestFilesHashMatched": 223,
+  "privateDeveloperConfigurationPreserved": true,
+  "workbookUnchanged": true,
+  "workbookSha256": "1bb77bab58c3707d04b138e68519e763c64b47da1504d3350aa7cf4c6fb219d0",
+  "gitCommandsExecuted": false,
+  "localSecretScan": "passed, including URL/JSON/XML variants and workbook internals",
+  "rawBackendLogsExcluded": true,
+  "robotEvidenceIncludesOnlyDisposableTestAccounts": true
+}

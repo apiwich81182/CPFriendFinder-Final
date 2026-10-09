@@ -1,0 +1,32 @@
+classDiagram
+class MessageContentStrategy { <<interface>>
++supports(type) boolean
++process(content) String
+}
+class AbstractMessageContentStrategy {
++process(content) String
+#normalize(content) String
+#validate(content)
+#transform(content) String
+}
+MessageContentStrategy <|.. AbstractMessageContentStrategy
+AbstractMessageContentStrategy <|-- TextContentStrategy
+AbstractMessageContentStrategy <|-- ImageContentStrategy
+AbstractMessageContentStrategy <|-- FileContentStrategy
+MessageContentStrategyResolver o-- MessageContentStrategy
+ChatMessageService --> MessageContentStrategyResolver
+ChatMessageService --> MessageNotifications
+NotificationService ..|> MessageNotifications
+FriendRequestService --> ApplicationEventPublisher : publish
+ApplicationEventPublisher --> NotificationObserver : notify
+NotificationService ..|> NotificationObserver
+class StoragePort { <<interface>> }
+StorageTool ..|> StoragePort
+ImageContentStrategy --> StoragePort
+UserService --> UserInterests
+UserInterestService ..|> UserInterests
+User "1" *-- "0..1" UserProfile
+ChatRoom "1" o-- "many" RoomMember
+RoomMember --> User
+Message --> ChatRoom
+Message --> User : sender

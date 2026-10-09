@@ -1,0 +1,22 @@
+sequenceDiagram
+actor A as Sender
+actor B as Receiver
+participant API as FriendRequestController
+participant S as FriendRequestService
+participant DB as Repositories
+participant E as ApplicationEventPublisher
+participant N as NotificationService
+A->>API: POST friend request
+API->>S: authenticated sender and receiver
+S->>DB: validate users, friendship and pending requests
+S->>DB: save PENDING request
+S->>E: publish FriendRequestSentEvent
+E->>N: synchronous listener
+N->>DB: save notification
+N-->>B: WebSocket notification
+B->>API: accept current request ID
+API->>S: accept(receiver, requestId)
+S->>DB: authorize receiver, ACCEPTED + friendship
+S->>E: publish accepted event
+E->>N: save/push notification
+N-->>A: accepted notification
