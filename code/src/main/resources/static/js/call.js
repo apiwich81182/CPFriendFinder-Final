@@ -28,27 +28,7 @@
     iceServers: [
       { urls: "stun:stun.l.google.com:19302" },
       { urls: "stun:stun1.l.google.com:19302" },
-      { urls: "stun:stun.relay.metered.ca:80" },
-      {
-        urls: "turn:asia-east.relay.metered.ca:80",
-        username: "9163b771c40b903fe9b0a80d",
-        credential: "Avx5pFF0JyQ3Fm1i",
-      },
-      {
-        urls: "turn:asia-east.relay.metered.ca:80?transport=tcp",
-        username: "9163b771c40b903fe9b0a80d",
-        credential: "Avx5pFF0JyQ3Fm1i",
-      },
-      {
-        urls: "turn:asia-east.relay.metered.ca:443",
-        username: "9163b771c40b903fe9b0a80d",
-        credential: "Avx5pFF0JyQ3Fm1i",
-      },
-      {
-        urls: "turns:asia-east.relay.metered.ca:443?transport=tcp",
-        username: "9163b771c40b903fe9b0a80d",
-        credential: "Avx5pFF0JyQ3Fm1i",
-      },
+      { urls: "stun:openrelay.metered.ca:80" },
       {
         urls: "turn:openrelay.metered.ca:80",
         username: "openrelayproject",
